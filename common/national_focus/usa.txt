@@ -17,7 +17,7 @@ focus_tree = {
 	
 	focus = {
 		id = America_Strong
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_America_Strong
 		
 		x = 25
 		y = 0
@@ -41,7 +41,7 @@ focus_tree = {
 	
 	focus = {
 		id = Strength_Through_Change
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Strength_Through_Change
 		prerequisite = { focus = America_Strong }
 		mutually_exclusive = { focus = Ballot_Stuffing }
 		x = 10
@@ -67,7 +67,7 @@ focus_tree = {
     ##### Communist
 	focus = {
 		id = For_The_Workers_Revolution
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_For_The_Workers_Revolution
 		prerequisite = { focus = Strength_Through_Change }
 		mutually_exclusive = { focus = Free_The_American_People }
 		
@@ -93,7 +93,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Rally_The_Unions
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Rally_The_Unions
 		prerequisite = { focus = For_The_Workers_Revolution }
 		
 		x = 0
@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Create_Armed_Militas
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Create_Armed_Militias
 		prerequisite = { focus = Rally_The_Unions }
 		
 		x = 0
@@ -143,7 +143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Meet_Soviet_Diplomats
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Meet_Soviet_Diplomats
 		prerequisite = { focus = Create_Armed_Militas }
 		
 		x = 0
@@ -168,7 +168,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Incorporate_The_Farm_Workers
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Incorporate_The_Farm_Workers
 		prerequisite = { focus = Meet_Soviet_Diplomats }
 		
 		x = 0
@@ -193,7 +193,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Arm_Supporters
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Arm_Supporters
 		prerequisite = { focus = Incorporate_The_Farm_Workers }
 		
 		x = 0
@@ -243,7 +243,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Seize_The_Means_of_Production
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Seize_The_Means_of_Production
 		prerequisite = { focus = Arm_Supporters }
 		
 		x = 2
@@ -268,7 +268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Assign_Loyal_Supporters
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Assign_Loyal_Supporters
 		prerequisite = { focus = Arm_Supporters }
 		
 		x = 0
@@ -473,6 +473,7 @@ focus_tree = {
 		id = Denounce_Stalinist_Communism
 		icon = GFX_thisgfxiswrong
 		prerequisite = { focus = Communal_Society }
+		mutually_exclusive = { focus = Fellow_Communists_Unite }
 		
 		x = -4
 		y = 1
@@ -498,6 +499,7 @@ focus_tree = {
 		id = Fellow_Communists_Unite
 		icon = GFX_thisgfxiswrong
 		prerequisite = { focus = Communal_Society }
+		mutually_exclusive = { focus = Denounce_Stalinist_Communism }
 		
 		x = 4
 		y = 1
@@ -876,7 +878,7 @@ focus_tree = {
 	##### Democratic
 	focus = {
 		id = Free_The_American_People
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Free_The_American_People
 		prerequisite = { focus = Strength_Through_Change }
 		mutually_exclusive = { focus = For_The_Workers_Revolution }
 		x = -5
@@ -902,7 +904,7 @@ focus_tree = {
 
 	focus = {
 		id = Unite_Protesters
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Unite_Protesters
 		prerequisite = { focus = Free_The_American_People }
 		
 		x = 0
@@ -928,7 +930,7 @@ focus_tree = {
 	
 	focus = {
 		id = Rally_Opposition
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Rally_Opposition
 		prerequisite = { focus = Unite_Protesters }
 		
 		x = 0
@@ -954,7 +956,7 @@ focus_tree = {
 	
 	focus = {
 		id = Build_Hideouts
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Build_Hideouts
 		prerequisite = { focus = Rally_Opposition }
 		
 		x = 0
@@ -1006,7 +1008,7 @@ focus_tree = {
 	
 	focus = {
 		id = Reopen_Congress
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Reopen_Congress
 		prerequisite = { focus = Reach_Out_to_the_Democratic_League }
 		
 		x = -1
@@ -1031,7 +1033,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Prepare_New_Ballots
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Prepare_New_Ballots
 		prerequisite = { focus = Reach_Out_to_the_Democratic_League }
 		
 		x = 1
@@ -1925,7 +1927,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Halt_Protests
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Halt_Protests
 		prerequisite = { focus = Unite_Protesters focus = Rally_The_Unions }
 		mutually_exclusive = { focus = Stand_Defiant }
 		
@@ -1953,7 +1955,7 @@ focus_tree = {
 		###### Auth Path (Can divert to fascist and monarchist) 
 	focus = {
 		id = Ballot_Stuffing
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Ballot_Stuffing
 		prerequisite = { focus = America_Strong }
 		mutually_exclusive = { focus = Strength_Through_Change }
 		x = -25
@@ -1978,7 +1980,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Smiths_1966_Inaugural_Address
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Smiths_1966_Inaugural_Adress
 		prerequisite = { focus = Ballot_Stuffing }
 		
 		x = 0
@@ -2003,7 +2005,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Path_of_Royalty
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Path_of_Royalty
 		prerequisite = { focus = Smiths_1966_Inaugural_Address }
 		mutually_exclusive = { focus = Stand_For_quote_and_quote_Democracy }
 		mutually_exclusive = { focus = Constitutional_Modifications_quote_and_quote_For_The_People }
@@ -2029,7 +2031,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Stand_For_quote_and_quote_Democracy 
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Stand_For_Quote-Unquote_Democracy
 		prerequisite = { focus = Smiths_1966_Inaugural_Address }
 		mutually_exclusive = { focus = Constitutional_Modifications_quote_and_quote_For_The_People }
 		mutually_exclusive = { focus = Path_of_Royalty }
@@ -2056,7 +2058,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Constitutional_Modifications_quote_and_quote_For_The_People
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Constitutional_Modifications_Quote-Unquote_For_The_People
 		prerequisite = { focus = Smiths_1966_Inaugural_Address }
 		mutually_exclusive = { focus = Stand_For_quote_and_quote_Democracy }
 		mutually_exclusive = { focus = Path_of_Royalty }
@@ -2083,7 +2085,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Rework_Cabinet_Members
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Rework_Cabinet_Members
 		prerequisite = { focus = Path_of_Royalty }
 		
 		x = 1
@@ -2108,7 +2110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Ensure_Support_Base
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Ensure_Supporter_Base
 		prerequisite = { focus = Path_of_Royalty }
 		
 		x = -1
@@ -2133,7 +2135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Rig_Polls
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Rig_Polls
 		prerequisite = { focus = Rework_Cabinet_Members }
 		prerequisite = { focus = Ensure_Support_Base }
 		
@@ -2158,33 +2160,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Ensure_Support_Base
-		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Path_of_Royalty }
-		
-		x = -1
-		y = 1
-		relative_position_id = Path_of_Royalty
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
 		id = The_American_Emperor
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_The_American_Emperor
 		prerequisite = { focus = Rig_Polls }
 
 		
@@ -2209,33 +2186,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Ensure_Support_Base
-		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Path_of_Royalty }
-		
-		x = -1
-		y = 1
-		relative_position_id = Path_of_Royalty
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
 		id = Royal_Court_Reforms
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Royal_Court_Reforms
 		prerequisite = { focus = The_American_Emperor }
 		
 		x = 1
@@ -2259,33 +2211,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Ensure_Support_Base
-		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Path_of_Royalty }
-		
-		x = -1
-		y = 1
-		relative_position_id = Path_of_Royalty
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
 		id = Monarchial_Education
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Monarchical_Education
 		prerequisite = { focus = The_American_Emperor }
 		
 		x = -1
@@ -2309,33 +2236,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Ensure_Support_Base
-		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Path_of_Royalty }
-		
-		x = -1
-		y = 1
-		relative_position_id = Path_of_Royalty
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
 		id = National_Symbolism
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_National_Symbolism
 		prerequisite = { focus = Monarchial_Education }
 		prerequisite = { focus = Royal_Court_Reforms }
 		
