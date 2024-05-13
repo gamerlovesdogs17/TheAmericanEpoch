@@ -1,0 +1,67 @@
+﻿
+focus_tree = {
+	id = RAJ_focus
+	
+	default = no
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = RAJ
+		}
+	}
+	
+	continuous_focus_position = { x = 25 y = 680 }	
+	
+	focus = {
+		id = RAJ_one
+		icon = GFX_thisgfxiswrong
+		
+		x = 0
+		y = 0
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = RAJ_two
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = RAJ_one }
+		
+		x = 0
+		y = 1
+		relative_position_id = RAJ_one
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}

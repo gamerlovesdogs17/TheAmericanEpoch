@@ -1,0 +1,3223 @@
+
+focus_tree = {
+	id = USA_focus
+	
+	default = no
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = USA
+		}
+	}
+	
+	continuous_focus_position = { x = 25 y = 2680 }	
+	
+	focus = {
+		id = America_Strong
+		icon = GFX_thisgfxiswrong
+		
+		x = 25
+		y = 0
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Strength_Through_Change
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = America_Strong }
+		mutually_exclusive = { focus = Ballot_Stuffing }
+		x = 10
+		y = 1
+		relative_position_id = America_Strong
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+    ##### Communist
+	focus = {
+		id = For_The_Workers_Revolution
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Strength_Through_Change }
+		mutually_exclusive = { focus = Free_The_American_People }
+		
+		x = 5
+		y = 1
+		relative_position_id = Strength_Through_Change
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Rally_The_Unions
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = For_The_Workers_Revolution }
+		
+		x = 0
+		y = 1
+		relative_position_id = For_The_Workers_Revolution
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Create_Armed_Militas
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Rally_The_Unions }
+		
+		x = 0
+		y = 1
+		relative_position_id = Rally_The_Unions
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Meet_Soviet_Diplomats
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Create_Armed_Militas }
+		
+		x = 0
+		y = 1
+		relative_position_id = Create_Armed_Militas
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Incorporate_The_Farm_Workers
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Meet_Soviet_Diplomats }
+		
+		x = 0
+		y = 1
+		relative_position_id = Meet_Soviet_Diplomats
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Arm_Supporters
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Incorporate_The_Farm_Workers }
+		
+		x = 0
+		y = 1
+		relative_position_id = Incorporate_The_Farm_Workers
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Take_Properties
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Arm_Supporters }
+		
+		x = -2
+		y = 1
+		relative_position_id = Arm_Supporters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Seize_The_Means_of_Production
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Arm_Supporters }
+		
+		x = 2
+		y = 1
+		relative_position_id = Arm_Supporters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Assign_Loyal_Supporters
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Arm_Supporters }
+		
+		x = 0
+		y = 1
+		relative_position_id = Arm_Supporters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Declare_The_Workers_Free
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Assign_Loyal_Supporters }
+		prerequisite = { focus = Take_Properties }
+		prerequisite = { focus = Seize_The_Means_of_Production }
+		
+		x = 0
+		y = 2
+		relative_position_id = Assign_Loyal_Supporters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Exile_Industrialists
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Declare_The_Workers_Free }
+		
+		x = 2
+		y = 1
+		relative_position_id = Declare_The_Workers_Free
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Party_Purge
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Exile_Industrialists }
+		
+		x = 0
+		y = 1
+		relative_position_id = Exile_Industrialists
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Cult_of_Personality
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Exile_Industrialists }
+		prerequisite = { focus = Repression_of_Counter_Revolutionaries }
+		
+		x = -2
+		y = 1
+		relative_position_id = Exile_Industrialists
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Party_Education_Program
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Cult_of_Personality }
+		
+		x = 0
+		y = 1
+		relative_position_id = Cult_of_Personality
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Consolidate_Power
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Repression_of_Counter_Revolutionaries }
+		
+		x = 0
+		y = 1
+		relative_position_id = Repression_of_Counter_Revolutionaries
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Communal_Society
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Party_Education_Program focus = Party_Purge focus = Consolidate_Power }
+		
+		x = 0
+		y = 1
+		relative_position_id = Party_Education_Program
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Denounce_Stalinist_Communism
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Communal_Society }
+		
+		x = -4
+		y = 1
+		relative_position_id = Communal_Society
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Fellow_Communists_Unite
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Communal_Society }
+		
+		x = 4
+		y = 1
+		relative_position_id = Communal_Society
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Global_Operations_COM
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Denounce_Stalinist_Communism focus = Fellow_Communists_Unite }
+		
+		x = 0
+		y = 2
+		relative_position_id = Communal_Society
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Join_The_Warsaw_Pact
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Fellow_Communists_Unite }
+		
+		x = 0
+		y = 1
+		relative_position_id = Fellow_Communists_Unite
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Formulate_Communist_Alliance
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Denounce_Stalinist_Communism }
+		
+		x = 0
+		y = 1
+		relative_position_id = Denounce_Stalinist_Communism
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Invite_Communists_of_The_World
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Formulate_Communist_Alliance }
+		
+		x = 0
+		y = 1
+		relative_position_id = Formulate_Communist_Alliance
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Free_Canadian_Workers
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Global_Operations_COM }
+		
+		x = 0
+		y = 1
+		relative_position_id = Global_Operations_COM
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Overthrow_British_Bourgeoisie
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Free_Canadian_Workers }
+		
+		x = 0
+		y = 1
+		relative_position_id = Free_Canadian_Workers
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Number_5_International
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Invite_Communists_of_The_World }
+		
+		x = 0
+		y = 1
+		relative_position_id = Invite_Communists_of_The_World
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = March_Down_South
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Overthrow_British_Bourgeoisie }
+		
+		x = 0
+		y = 1
+		relative_position_id = Overthrow_British_Bourgeoisie
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Plans_for_Global_Revolution
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Number_5_International }
+		prerequisite = { focus = Global_Operations_COM }
+		
+		x = 1
+		y = 1
+		relative_position_id = Number_5_International
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Crush_The_Capitalists
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Plans_for_Global_Revolution focus = Joint_American_Soviet_Planning }
+		prerequisite = { focus = March_Down_South }
+		
+		x = 3
+		y = 2
+		relative_position_id = Plans_for_Global_Revolution
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = Solidarity_With_Partners
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Join_The_Warsaw_Pact }
+		
+		x = 0
+		y = 1
+		relative_position_id = Join_The_Warsaw_Pact
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Free_European_Peoples
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Solidarity_With_Partners }
+		
+		x = 0
+		y = 1
+		relative_position_id = Solidarity_With_Partners
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Joint_American_Soviet_Planning
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Free_European_Peoples }
+		prerequisite = { focus = Global_Operations_COM }
+		
+		x = -1
+		y = 1
+		relative_position_id = Free_European_Peoples
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Repression_of_Counter_Revolutionaries
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Declare_The_Workers_Free }
+		
+		x = -2
+		y = 1
+		relative_position_id = Declare_The_Workers_Free
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	##### Democratic
+	focus = {
+		id = Free_The_American_People
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Strength_Through_Change }
+		mutually_exclusive = { focus = For_The_Workers_Revolution }
+		x = -5
+		y = 1
+		relative_position_id = Strength_Through_Change
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = Unite_Protesters
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Free_The_American_People }
+		
+		x = 0
+		y = 1
+		relative_position_id = Free_The_American_People
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Rally_Opposition
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Unite_Protesters }
+		
+		x = 0
+		y = 1
+		relative_position_id = Unite_Protesters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Build_Hideouts
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Rally_Opposition }
+		
+		x = 0
+		y = 1
+		relative_position_id = Rally_Opposition
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Reach_Out_to_the_Democratic_League
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Build_Hideouts }
+		
+		x = 0
+		y = 2
+		relative_position_id = Build_Hideouts
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Reopen_Congress
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Reach_Out_to_the_Democratic_League }
+		
+		x = -1
+		y = 1
+		relative_position_id = Reach_Out_to_the_Democratic_League
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Prepare_New_Ballots
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Reach_Out_to_the_Democratic_League }
+		
+		x = 1
+		y = 1
+		relative_position_id = Reach_Out_to_the_Democratic_League
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Begin_Legitamizing_Elections
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Reopen_Congress }
+		prerequisite = { focus = Prepare_New_Ballots }
+		
+		x = 1
+		y = 1
+		relative_position_id = Reopen_Congress
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Perform_First_Election
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Begin_Legitamizing_Elections }
+		prerequisite = { focus = Renounce_Former_Elections_As_Rigged }
+		x = 0
+		y = 2
+		relative_position_id = Begin_Legitamizing_Elections
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Renounce_Former_Elections_As_Rigged
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Begin_Legitamizing_Elections }
+		
+		x = 2
+		y = 1
+		relative_position_id = Begin_Legitamizing_Elections
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Return_Former_Exiles
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Perform_First_Election }
+		
+		x = 0
+		y = 1
+		relative_position_id = Perform_First_Election
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Return_Protections_of_Bill_of_Rights_Liberties
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Return_Former_Exiles }
+		
+		x = 0
+		y = 1
+		relative_position_id = Return_Former_Exiles
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Release_Wrongly_Imprisoned
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Return_Former_Exiles }
+		
+		x = 2
+		y = 1
+		relative_position_id = Return_Former_Exiles
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = We_Got_More_Work_To_Do
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Return_Protections_of_Bill_of_Rights_Liberties }
+		
+		x = 0
+		y = 1
+		relative_position_id = Return_Protections_of_Bill_of_Rights_Liberties
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = We_Apologize_to_The_American_People
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = We_Got_More_Work_To_Do }
+		
+		x = 0
+		y = 1
+		relative_position_id = We_Got_More_Work_To_Do
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = And_Achieve_The_Steps_To_Repair_Pasts
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = We_Apologize_to_The_American_People }
+		
+		x = 0
+		y = 1
+		relative_position_id = We_Apologize_to_The_American_People
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Revise_Checks_And_Balances
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = And_Achieve_The_Steps_To_Repair_Pasts }
+		
+		x = 2
+		y = 1
+		relative_position_id = And_Achieve_The_Steps_To_Repair_Pasts
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Limit_Presidental_Terms
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = And_Achieve_The_Steps_To_Repair_Pasts }
+		
+		x = 0
+		y = 2
+		relative_position_id = And_Achieve_The_Steps_To_Repair_Pasts
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Fire_Pro_Authoritarian_Military_Staff
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = And_Achieve_The_Steps_To_Repair_Pasts }
+		
+		x = -2
+		y = 1
+		relative_position_id = And_Achieve_The_Steps_To_Repair_Pasts
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Provide_New_Civilian_Protections
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Limit_Presidental_Terms }
+		prerequisite = { focus = Revise_Checks_And_Balances }
+		prerequisite = { focus = Fire_Pro_Authoritarian_Military_Staff }
+		x = 0
+		y = 1
+		relative_position_id = Limit_Presidental_Terms
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Abandon_Big_Brother_Policing_Policy
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Provide_New_Civilian_Protections }
+		
+		x = 0
+		y = 1
+		relative_position_id = Provide_New_Civilian_Protections
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Once_More_Free
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Abandon_Big_Brother_Policing_Policy }
+		prerequisite = { focus = Rid_of_Secret_Police }
+		prerequisite = { focus = Form_Civilian_Oversight_Committes }
+		
+		x = 0
+		y = 2
+		relative_position_id = Abandon_Big_Brother_Policing_Policy
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Rid_of_Secret_Police
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Abandon_Big_Brother_Policing_Policy }
+		
+		x = 2
+		y = 1
+		relative_position_id = Abandon_Big_Brother_Policing_Policy
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Form_Civilian_Oversight_Committes
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Abandon_Big_Brother_Policing_Policy }
+		
+		x = -2
+		y = 1
+		relative_position_id = Abandon_Big_Brother_Policing_Policy
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Join_the_Democratic_League
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Perform_First_Election }
+		
+		x = -6
+		y = 1
+		relative_position_id = Perform_First_Election
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Global_Operations
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Join_the_Democratic_League }
+		
+		x = -3
+		y = 1
+		relative_position_id = Join_the_Democratic_League
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Request_Alliance_Ownership
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Join_the_Democratic_League }
+		
+		x = 0
+		y = 2
+		relative_position_id = Join_the_Democratic_League
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Diplomatic_Assurances
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Join_the_Democratic_League }
+		
+		x = 3
+		y = 1
+		relative_position_id = Join_the_Democratic_League
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Approach_India
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Diplomatic_Assurances }
+		
+		x = -1
+		y = 1
+		relative_position_id = Diplomatic_Assurances
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Meet_With_Mexico
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Diplomatic_Assurances }
+		
+		x = 1
+		y = 1
+		relative_position_id = Diplomatic_Assurances
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Conference_With_Greece
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Meet_With_Mexico }
+		prerequisite = { focus = Approach_India }
+		x = 1
+		y = 1
+		relative_position_id = Approach_India
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Invite_Turkish_Diplomats
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Conference_With_Greece }
+		
+		x = 0
+		y = 1
+		relative_position_id = Conference_With_Greece
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Payoff_British_Politicans
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Global_Operations }
+		
+		x = 1
+		y = 1
+		relative_position_id = Global_Operations
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Demand_For_The_British
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Payoff_British_Politicans }
+		
+		x = 2
+		y = 1
+		relative_position_id = Payoff_British_Politicans
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = French_Ultimatium
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Payoff_British_Politicans }
+		
+		x = 0
+		y = 2
+		relative_position_id = Payoff_British_Politicans
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Democratic_Propaganda_In_Yugoslavia
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Global_Operations }
+		
+		x = -1
+		y = 1
+		relative_position_id = Global_Operations
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Reinforce_Propaganda
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Democratic_Propaganda_In_Yugoslavia }
+		
+		x = 0
+		y = 2
+		relative_position_id = Democratic_Propaganda_In_Yugoslavia
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Declare_An_America_of_The_Free_World
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Demand_For_The_British }
+		prerequisite = { focus = French_Ultimatium }
+		prerequisite = { focus = Invite_Turkish_Diplomats }
+		prerequisite = { focus = Reinforce_Propaganda }
+		
+		x = 0
+		y = 2
+		relative_position_id = Demand_For_The_British
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Operation_Unthinkable
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Declare_An_America_of_The_Free_World }
+		
+		x = 0
+		y = 1
+		relative_position_id = Declare_An_America_of_The_Free_World
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Declare_Global_Liberation
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Operation_Unthinkable }
+		
+		x = 0
+		y = 2
+		relative_position_id = Operation_Unthinkable
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	##### Shared Non-Auth Focuses
+	
+	focus = {
+		id = Stand_Defiant
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Unite_Protesters focus = Rally_The_Unions }
+		mutually_exclusive = { focus = Halt_Protests }
+		
+		x = 3
+		y = 1
+		relative_position_id = Unite_Protesters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Halt_Protests
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Unite_Protesters focus = Rally_The_Unions }
+		mutually_exclusive = { focus = Stand_Defiant }
+		
+		x = 7
+		y = 1
+		relative_position_id = Unite_Protesters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+	}
+		###### Auth Path (Can divert to fascist and monarchist) 
+	focus = {
+		id = Ballot_Stuffing
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = America_Strong }
+		mutually_exclusive = { focus = Strength_Through_Change }
+		x = -25
+		y = 1
+		relative_position_id = America_Strong
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Smiths_1966_Inaugural_Address
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Ballot_Stuffing }
+		
+		x = 0
+		y = 1
+		relative_position_id = Ballot_Stuffing
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Path_of_Royalty
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Smiths_1966_Inaugural_Address }
+		mutually_exclusive = { focus = Stand_For_quote_and_quote_Democracy }
+		mutually_exclusive = { focus = Constitutional_Modifications_quote_and_quote_For_The_People }
+		x = 10
+		y = 1
+		relative_position_id = Smiths_1966_Inaugural_Address
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Stand_For_quote_and_quote_Democracy 
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Smiths_1966_Inaugural_Address }
+		mutually_exclusive = { focus = Constitutional_Modifications_quote_and_quote_For_The_People }
+		mutually_exclusive = { focus = Path_of_Royalty }
+		
+		x = 0
+		y = 1
+		relative_position_id = Smiths_1966_Inaugural_Address
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Constitutional_Modifications_quote_and_quote_For_The_People
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Smiths_1966_Inaugural_Address }
+		mutually_exclusive = { focus = Stand_For_quote_and_quote_Democracy }
+		mutually_exclusive = { focus = Path_of_Royalty }
+		
+		x = -10
+		y = 1
+		relative_position_id = Smiths_1966_Inaugural_Address
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Rework_Cabinet_Members
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Path_of_Royalty }
+		
+		x = 1
+		y = 1
+		relative_position_id = Path_of_Royalty
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Ensure_Support_Base
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Path_of_Royalty }
+		
+		x = -1
+		y = 1
+		relative_position_id = Path_of_Royalty
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Rig_Polls
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Rework_Cabinet_Members }
+		prerequisite = { focus = Ensure_Support_Base }
+		
+		x = 1
+		y = 1
+		relative_position_id = Ensure_Support_Base
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Ensure_Support_Base
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Path_of_Royalty }
+		
+		x = -1
+		y = 1
+		relative_position_id = Path_of_Royalty
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = The_American_Emperor
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Rig_Polls }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = Rig_Polls
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Ensure_Support_Base
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Path_of_Royalty }
+		
+		x = -1
+		y = 1
+		relative_position_id = Path_of_Royalty
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Royal_Court_Reforms
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = The_American_Emperor }
+		
+		x = 1
+		y = 1
+		relative_position_id = The_American_Emperor
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Ensure_Support_Base
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Path_of_Royalty }
+		
+		x = -1
+		y = 1
+		relative_position_id = Path_of_Royalty
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Monarchial_Education
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = The_American_Emperor }
+		
+		x = -1
+		y = 1
+		relative_position_id = The_American_Emperor
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Ensure_Support_Base
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Path_of_Royalty }
+		
+		x = -1
+		y = 1
+		relative_position_id = Path_of_Royalty
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = National_Symbolism
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Monarchial_Education }
+		prerequisite = { focus = Royal_Court_Reforms }
+		
+		x = 1
+		y = 1
+		relative_position_id = Monarchial_Education
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	#### Saxon-American Crown Path
+	focus = {
+		id = Secret_Meetings_With_British_Crown
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = National_Symbolism }
+		mutually_exclusive = { focus = Unified_American_Vision }
+		mutually_exclusive = { focus = Habsburg_America }
+		x = 7
+		y = 1
+		relative_position_id = National_Symbolism
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	# United America Monarchy Path
+	focus = {
+		id = Unified_American_Vision
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = National_Symbolism }
+		mutually_exclusive = { focus = Habsburg_America }
+		mutually_exclusive = { focus = Secret_Meetings_With_British_Crown }
+		x = 0
+		y = 1
+		relative_position_id = National_Symbolism
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	#### Habsburg Monarchy Path
+	focus = {
+		id = Habsburg_America
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = National_Symbolism }
+		mutually_exclusive = { focus = Unified_American_Vision }
+		mutually_exclusive = { focus = Secret_Meetings_With_British_Crown }
+		x = -7
+		y = 1
+		relative_position_id = National_Symbolism
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Contact_The_Habsburgs
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Habsburg_America }
+		x = 0
+		y = 1
+		relative_position_id = Habsburg_America
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Join_The_Habsburg_Family
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Contact_The_Habsburgs }
+		x = 1
+		y = 1
+		relative_position_id = Contact_The_Habsburgs
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Habsburgs_In_Cabinet
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Contact_The_Habsburgs }
+		x = -1
+		y = 1
+		relative_position_id = Contact_The_Habsburgs
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Rebranding_of_America
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Habsburgs_In_Cabinet }
+		prerequisite = { focus = Join_The_Habsburg_Family }
+		x = 1
+		y = 1
+		relative_position_id = Habsburgs_In_Cabinet
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Annex_Czech_Into_Austria
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Rebranding_of_America }
+		x = 0
+		y = 1
+		relative_position_id = Rebranding_of_America
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Rebranding_of_America
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Habsburgs_In_Cabinet }
+		prerequisite = { focus = Join_The_Habsburg_Family }
+		x = 1
+		y = 1
+		relative_position_id = Habsburgs_In_Cabinet
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Allign_With_Habsburg_Ambitions
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Annex_Czech_Into_Austria }
+		x = 0
+		y = 1
+		relative_position_id = Annex_Czech_Into_Austria
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Rebranding_of_America
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Habsburgs_In_Cabinet }
+		prerequisite = { focus = Join_The_Habsburg_Family }
+		x = 1
+		y = 1
+		relative_position_id = Habsburgs_In_Cabinet
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Why_Not_End_There
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Allign_With_Habsburg_Ambitions }
+		x = 0
+		y = 1
+		relative_position_id = Allign_With_Habsburg_Ambitions
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+}
+
+	focus = {
+		id = Rebranding_of_America
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Habsburgs_In_Cabinet }
+		prerequisite = { focus = Join_The_Habsburg_Family }
+		x = 1
+		y = 1
+		relative_position_id = Habsburgs_In_Cabinet
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Fighting_For_Slavic_Friends
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Why_Not_End_There }
+		x = 0
+		y = 1
+		relative_position_id = Why_Not_End_There
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Offer_Anglo_Union
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Fighting_For_Slavic_Friends }
+		x = 0
+		y = 1
+		relative_position_id = Fighting_For_Slavic_Friends
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = American_Austro_Hungarian_Slavic_Anglo_Union
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Offer_Anglo_Union }
+		x = 0
+		y = 1
+		relative_position_id = Offer_Anglo_Union
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Demand_Canadian_Subjagation
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Unified_American_Vision }
+		x = 0
+		y = 1
+		relative_position_id = Unified_American_Vision
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Stage_Mexican_American_Incident
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Demand_Canadian_Subjagation }
+		x = 0
+		y = 1
+		relative_position_id = Demand_Canadian_Subjagation
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = South_American_Ambitions
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Stage_Mexican_American_Incident }
+		x = -2
+		y = 1
+		relative_position_id = Stage_Mexican_American_Incident
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Dominican_Occupation
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Stage_Mexican_American_Incident }
+		x = 0
+		y = 1
+		relative_position_id = Stage_Mexican_American_Incident
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Hatian_Supervision
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Stage_Mexican_American_Incident }
+		x = 2
+		y = 1
+		relative_position_id = Stage_Mexican_American_Incident
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Demand_British_Cede_American_Holdings
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Dominican_Occupation }
+		prerequisite = { focus = Hatian_Supervision }
+		x = 1
+		y = 1
+		relative_position_id = Dominican_Occupation
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Demand_To_The_French
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Demand_British_Cede_American_Holdings }
+		x = 0
+		y = 1
+		relative_position_id = Demand_British_Cede_American_Holdings
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Western_Hemisphere_United
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Demand_To_The_French }
+		prerequisite = { focus = South_American_Ambitions }
+		x = -2
+		y = 1
+		relative_position_id = Demand_To_The_French
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Onwards_To_Victory
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Western_Hemisphere_United focus = American_Austro_Hungarian_Slavic_Anglo_Union focus = Beat_Them_Communist_Pigs }
+		x = 0
+		y = 4
+		relative_position_id = Western_Hemisphere_United
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Coordinate_Potential_American_Anglo_Union
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Secret_Meetings_With_British_Crown }
+		x = 0
+		y = 1
+		relative_position_id = Secret_Meetings_With_British_Crown
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Payoff_British_Parliament
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Coordinate_Potential_American_Anglo_Union }
+		x = 0
+		y = 1
+		relative_position_id = Coordinate_Potential_American_Anglo_Union
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = English_Speakers_United
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Payoff_British_Parliament }
+		mutually_exclusive = { focus = Invade_England }
+		
+		x = 2
+		y = 1
+		relative_position_id = Payoff_British_Parliament
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Invade_England
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Payoff_British_Parliament }
+		mutually_exclusive = { focus = English_Speakers_United }
+		x = -2
+		y = 1
+		relative_position_id = Payoff_British_Parliament
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Merge_The_Two_Crowns
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Invade_England focus = English_Speakers_United }
+		x = 0
+		y = 2
+		relative_position_id = Payoff_British_Parliament
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = American_Anglo_Commonwealth
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Merge_The_Two_Crowns }
+		x = 0
+		y = 1
+		relative_position_id = Merge_The_Two_Crowns
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Merge_Militaries
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = American_Anglo_Commonwealth }
+		x = 0
+		y = 1
+		relative_position_id = American_Anglo_Commonwealth
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Common_Identity
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Merge_Militaries }
+		x = 0
+		y = 1
+		relative_position_id = Merge_Militaries
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Reclaim_Lost_Colonies
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Common_Identity }
+		x = 0
+		y = 1
+		relative_position_id = Common_Identity
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Beat_Them_Communist_Pigs
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Reclaim_Lost_Colonies }
+		x = 0
+		y = 1
+		relative_position_id = Reclaim_Lost_Colonies
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
+
+

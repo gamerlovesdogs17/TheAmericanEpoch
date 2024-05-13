@@ -1,0 +1,124 @@
+bookmarks = {
+	bookmark = {
+		name = "World In Balance"
+		desc = "1966_BOOKMARK_DESC"
+		date = 1966.1.1.12
+		picture = "GFX_1966_BOOKMARK"
+		default_country = "USA"
+	
+		FRA = {
+			history = FRA_1966_BOOKMARK_DESC
+			ideology = neutrality
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+		USA = {
+			history = USA_1966_BOOKMARK_DESC
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				For_The_Workers_Revolution
+				Free_The_American_People
+				Smiths_1966_Inaugural_Address
+			}
+		}
+		ENG = {
+			history = ENG_1966_BOOKMARK_DESC
+			ideology = neutrality
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				ENG_george_vi
+				british_austerity_idea
+				ENG_colonial_elite
+			}
+			focuses = {
+				ENG_war_with_japan
+				bomber_command_focus
+				maud_focus
+			}
+			
+		}
+		PRC = {
+			history = PRC_1966_BOOKMARK_DESC
+			ideology = communism
+			ideas = {
+				PRC_the_long_march_1
+				PRC_low_popular_support_1
+				PRC_power_struggles
+			}
+			focuses = {
+				PRC_infiltration
+				PRC_maoism
+				PRC_anti_japanese_expedition
+			}
+		}
+		BRA = {
+			history = BRA_1966_BOOKMARK_DESC
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		RAJ = {
+			history = "RAJ_1966_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_all_india_forward_bloc
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+		SOV = {
+			history = SOV_1966_BOOKMARK_DESC
+			ideology = communism
+			ideas = {
+				SOV_anti_soviet_military_thinking_banned_navy
+				SOV_second_five_year_plan_fake_1939_ns
+				SOV_purged_junior_army_officers_2
+			}
+			focuses = {
+				SOV_found_the_comecon
+				SOV_father_of_nations
+				SOV_patriarch_of_all_russia
+			}
+		}
+
+		"---"={
+			history = "OTHER_1966_BOOKMARK_DESC"
+		}
+
+		# minors from DLC ####
+		"ALB"={
+			minor = yes
+			history = "ALB_1966_BOOKMARK_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
