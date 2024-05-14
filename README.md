@@ -27,8 +27,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2891840568&searchtext=ste
 
 ## Mod Team:
 
-gamerdoglover - Creator
-Rockythepeep, The Detailed Bread, GoblinAlpen, Andrix01
+Gamerdoglover, Rockythepeep, The Detailed Bread, GoblinAlpen, Andrix01
 
 
 
