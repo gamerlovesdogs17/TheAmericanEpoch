@@ -2030,60 +2030,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Stand_For_quote_and_quote_Democracy 
-		icon = GFX_goal_Stand_For_Quote-Unquote_Democracy
-		prerequisite = { focus = Smiths_1966_Inaugural_Address }
-		mutually_exclusive = { focus = Constitutional_Modifications_quote_and_quote_For_The_People }
-		mutually_exclusive = { focus = Path_of_Royalty }
-		
-		x = 0
-		y = 1
-		relative_position_id = Smiths_1966_Inaugural_Address
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
-		id = Constitutional_Modifications_quote_and_quote_For_The_People
-		icon = GFX_goal_Constitutional_Modifications_Quote-Unquote_For_The_People
-		prerequisite = { focus = Smiths_1966_Inaugural_Address }
-		mutually_exclusive = { focus = Stand_For_quote_and_quote_Democracy }
-		mutually_exclusive = { focus = Path_of_Royalty }
-		
-		x = -10
-		y = 1
-		relative_position_id = Smiths_1966_Inaugural_Address
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
 		id = Rework_Cabinet_Members
 		icon = GFX_goal_Rework_Cabinet_Members
 		prerequisite = { focus = Path_of_Royalty }
@@ -2463,31 +2409,6 @@ focus_tree = {
 			factor = 5
 		}
 	}
-	focus = {
-		id = Rebranding_of_America
-		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Habsburgs_In_Cabinet }
-		prerequisite = { focus = Join_The_Habsburg_Family }
-		x = 1
-		y = 1
-		relative_position_id = Habsburgs_In_Cabinet
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
 		focus = {
 		id = Allign_With_Habsburg_Ambitions
 		icon = GFX_thisgfxiswrong
@@ -2495,31 +2416,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Annex_Czech_Into_Austria
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
-		id = Rebranding_of_America
-		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Habsburgs_In_Cabinet }
-		prerequisite = { focus = Join_The_Habsburg_Family }
-		x = 1
-		y = 1
-		relative_position_id = Habsburgs_In_Cabinet
 		
 		cost = 10
 
@@ -2561,32 +2457,6 @@ focus_tree = {
 			factor = 5
 		}
 }
-
-	focus = {
-		id = Rebranding_of_America
-		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Habsburgs_In_Cabinet }
-		prerequisite = { focus = Join_The_Habsburg_Family }
-		x = 1
-		y = 1
-		relative_position_id = Habsburgs_In_Cabinet
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-			
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
 		focus = {
 		id = Fighting_For_Slavic_Friends
 		icon = GFX_thisgfxiswrong
@@ -3103,6 +2973,620 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Reclaim_Lost_Colonies
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	# Stay Same Path
+	focus = {
+		id = Stand_For_quote_and_quote_Democracy 
+		icon = GFX_goal_Stand_For_Quote-Unquote_Democracy
+		prerequisite = { focus = Smiths_1966_Inaugural_Address }
+		mutually_exclusive = { focus = Constitutional_Modifications_quote_and_quote_For_The_People }
+		mutually_exclusive = { focus = Path_of_Royalty }
+		
+		x = -10
+		y = 1
+		relative_position_id = Smiths_1966_Inaugural_Address
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Promote_National_Unity
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Stand_For_quote_and_quote_Democracy }
+		x = 0
+		y = 1
+		relative_position_id = Stand_For_quote_and_quote_Democracy
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Quiet_Speakers
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Promote_National_Unity }
+		x = 1
+		y = 1
+		relative_position_id = Promote_National_Unity
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Modify_Historical_Narratives
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Promote_National_Unity }
+		x = -1
+		y = 1
+		relative_position_id = Promote_National_Unity
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Speak_To_The_People
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Modify_Historical_Narratives }
+		prerequisite = { focus = Quiet_Speakers }
+		x = -1
+		y = 1
+		relative_position_id = Quiet_Speakers
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Cold_War_Policy
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Speak_To_The_People }
+		x = 0
+		y = 1
+		relative_position_id = Speak_To_The_People
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Containment_Approach
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Cold_War_Policy }
+		mutually_exclusive = { focus = Aggressive_Moves }
+		x = -4
+		y = 1
+		relative_position_id = Cold_War_Policy
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Aggressive_Moves
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Cold_War_Policy }
+		mutually_exclusive = { focus = Containment_Approach }
+		x = 4
+		y = 1
+		relative_position_id = Cold_War_Policy
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Invasion_of_China
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Aggressive_Moves }
+		x = 1
+		y = 1
+		relative_position_id = Aggressive_Moves
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id =  Keep_The_Backyard_Friendly
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Aggressive_Moves }
+		x = -1
+		y = 1
+		relative_position_id = Aggressive_Moves
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Soviet_Menace
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Invasion_of_China }
+		x = 0
+		y = 1
+		relative_position_id = Invasion_of_China
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Indian_Threat
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Keep_The_Backyard_Friendly }
+		x = 0
+		y = 1
+		relative_position_id = Keep_The_Backyard_Friendly
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Declare_Indian_Fake_Democracy
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Indian_Threat }
+		x = 0
+		y = 1
+		relative_position_id = Indian_Threat
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = War_of_quote_unquote_Liberation
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Soviet_Menace }
+		x = 0
+		y = 1
+		relative_position_id = Soviet_Menace
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Declare_The_Globe_Liberated
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Declare_Indian_Fake_Democracy focus = War_of_quote_unquote_Liberation focus = Influence_Korea }
+
+		x = -3
+		y = 2
+		relative_position_id = Declare_Indian_Fake_Democracy
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = American_Global_Hegemony
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Declare_The_Globe_Liberated }
+		x = 0
+		y = 1
+		relative_position_id = Declare_The_Globe_Liberated
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Secure_South_America
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Containment_Approach }
+		x = 1
+		y = 1
+		relative_position_id = Containment_Approach
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Invite_European_Countries
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Containment_Approach }
+		x = -1
+		y = 1
+		relative_position_id = Containment_Approach
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Move_On_Vietnam
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Invite_European_Countries focus = Secure_South_America }
+		x = -1
+		y = 1
+		relative_position_id = Secure_South_America
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Fund_African_Movements
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Move_On_Vietnam }
+		x = 0
+		y = 1
+		relative_position_id = Move_On_Vietnam
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		focus = {
+		id = Influence_Korea
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Fund_African_Movements }
+		x = 0
+		y = 1
+		relative_position_id = Fund_African_Movements
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	# Fascism Path
+	focus = {
+		id = Constitutional_Modifications_quote_and_quote_For_The_People
+		icon = GFX_goal_Constitutional_Modifications_Quote-Unquote_For_The_People
+		prerequisite = { focus = Smiths_1966_Inaugural_Address }
+		mutually_exclusive = { focus = Stand_For_quote_and_quote_Democracy }
+		mutually_exclusive = { focus = Path_of_Royalty }
+		
+		x = -25
+		y = 1
+		relative_position_id = Smiths_1966_Inaugural_Address
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Kill_Opposition
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Constitutional_Modifications_quote_and_quote_For_The_People }
+		
+		x = -0
+		y = 1
+		relative_position_id = Constitutional_Modifications_quote_and_quote_For_The_People
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = American_Supreme_Leader
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Kill_Opposition }
+		
+		x = 0
+		y = 1
+		relative_position_id = Kill_Opposition
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Crush_Protesters
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = American_Supreme_Leader }
+		
+		x = 0
+		y = 1
+		relative_position_id = American_Supreme_Leader
 		
 		cost = 10
 
