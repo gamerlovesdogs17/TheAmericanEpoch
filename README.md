@@ -20,9 +20,10 @@ The year is 1966 and the world is in balance as 3 factions contest across the gl
 ![bzxvcfad](https://github.com/gamerlovesdogs17/TheAmericanEpoch/assets/145847426/8d1f608e-c3fb-462b-b31b-e5298fb81480)
 
 ## Credit To:
+
 Fixed version of the Stege Map Mod, used for the **map design**
 https://steamcommunity.com/sharedfiles/filedetails/?id=2891840568
--
+
 Blueprint style mod, used for **tech style**
 https://steamcommunity.com/sharedfiles/filedetails/?id=2319462357
 
