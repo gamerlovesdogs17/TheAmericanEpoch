@@ -1,0 +1,16 @@
+spriteTypes = {	
+	####Hey PDX I hate your codings####
+	
+	#######subuniticons for paratank battalion#######
+	spriteType = { name = "GFX_unit_para_tank_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_paraicon_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_para_tank_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paraarm_icon.dds" noOfFrames = 2}
+	
+	spriteType = { name = "GFX_unit_light_para_sp_artillery_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_paraarm_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_para_sp_artillery_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paraarm_artillery_icon.dds" noOfFrames = 2}
+	
+	spriteType = { name = "GFX_unit_light_para_tank_destroyer_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_paraarm_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_para_tank_destroyer_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paraarm_at_icon.dds" noOfFrames = 2}
+	
+	spriteType = { name = "GFX_unit_light_para_sp_anti_air_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_paraarm_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_para_sp_anti_air_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paraarm_aa_small.dds" noOfFrames = 2}
+}
