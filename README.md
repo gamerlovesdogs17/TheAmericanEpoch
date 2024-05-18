@@ -27,6 +27,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2891840568
 Blueprint style mod, used for **tech style**
 https://steamcommunity.com/sharedfiles/filedetails/?id=2319462357
 
+Technology Rework mod, used for **technologies**
+https://steamcommunity.com/sharedfiles/filedetails/?id=2677872257
+
 ![utiy](https://github.com/gamerlovesdogs17/TheAmericanEpoch/assets/145847426/cf258fcb-f261-493b-ba50-9354f343dd3a)
 
 ## Mod Team:
