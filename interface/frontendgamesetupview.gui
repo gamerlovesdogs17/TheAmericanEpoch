@@ -556,7 +556,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bookmark_title"
-			position = { x = 25 y = 305 }
+			position = { x = 25 y = 301 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 340
@@ -566,7 +566,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = 25 y = 330 }
+			position = { x = 25 y = 320 }
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 540
@@ -1877,22 +1877,15 @@ guiTypes = {
 		}
 
 		instantTextBoxType={
-			position = {x = 30 y = 148 }
+			position = {x = 27 y = 148 }
 			name = "historical_text"
 			font = "hoi_24header"
-			maxWidth = 370
+			maxWidth = 600
 			maxHeight = 16
-			text = "FE_HISTORICAL"
+			text = "This is an alt hist mod, there's no historical AI."
 			pdx_tooltip = "FE_HISTORICAL_TOOLTIP"
 			format = left
 			fixedsize = yes
-		}
-
-		checkboxType = {
-			name = "historical_cb"
-			position = { x=530 y =145}
-			quadTextureSprite ="GFX_generic_checkbox"
-			clicksound = click_checkbox
 		}
 	}
 
