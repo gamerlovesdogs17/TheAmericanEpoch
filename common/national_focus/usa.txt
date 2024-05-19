@@ -1056,7 +1056,6 @@ focus_tree = {
 			factor = 5
 		}
 	}
-	
 	focus = {
 		id = Begin_Legitamizing_Elections
 		icon = GFX_thisgfxiswrong

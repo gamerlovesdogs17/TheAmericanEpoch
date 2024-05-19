@@ -8,3 +8,4 @@ name="The American Epoch"
 supported_version="1.14.5"
 
 replace_path = "events"
+replace_path = "common/national_focus"
