@@ -15,6 +15,8 @@ focus_tree = {
 	
 	continuous_focus_position = { x = 25 y = 2680 }	
 	
+	shared_focus = Industrial_Development_Plans_ind
+	
 	focus = {
 		id = America_Strong
 		icon = GFX_goal_America_Strong
@@ -1951,7 +1953,7 @@ focus_tree = {
 		}
 		
 	}
-		###### Auth Path (Can divert to fascist and monarchist) 
+		###### Auth Path Can divert to fascist and monarchist
 	focus = {
 		id = Ballot_Stuffing
 		icon = GFX_goal_Ballot_Stuffing
@@ -1985,6 +1987,230 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Ballot_Stuffing
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Push_More_Influence_On_Britain
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Smiths_1966_Inaugural_Address }
+		
+		x = 20
+		y = 1
+		relative_position_id = Smiths_1966_Inaugural_Address
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Fund_French_Partners
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Push_More_Influence_On_Britain }
+		
+		x = 0
+		y = 1
+		relative_position_id = Push_More_Influence_On_Britain
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Fund_British_Partners
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Push_More_Influence_On_Britain }
+		
+		x = 2
+		y = 1
+		relative_position_id = Push_More_Influence_On_Britain
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Demand_British_Subjugation
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Fund_British_Partners }
+		
+		x = 0
+		y = 1
+		relative_position_id = Fund_British_Partners
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Move_On_France
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Fund_French_Partners }
+		
+		x = 0
+		y = 1
+		relative_position_id = Fund_French_Partners
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Press_Canadians
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Push_More_Influence_On_Britain }
+		
+		x = -2
+		y = 1
+		relative_position_id = Push_More_Influence_On_Britain
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Push_For_Loyal_Canada
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Press_Canadians }
+		
+		x = 0
+		y = 1
+		relative_position_id = Press_Canadians
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Ultimatium_For_Canada
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Push_For_Loyal_Canada }
+		
+		x = 0
+		y = 1
+		relative_position_id = Push_For_Loyal_Canada
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Redirect_Puppet_Governments
+		icon = GFX_goal_unknown
+		prerequisite = { focus = Ultimatium_For_Canada focus = Move_On_France focus = Demand_British_Subjugation }
+		x = 2
+		y = 1
+		relative_position_id = Ultimatium_For_Canada
 		
 		cost = 10
 
@@ -3586,6 +3812,283 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = American_Supreme_Leader
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Increase_Secret_Police_Overlook
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Crush_Protesters }
+		
+		x = 2
+		y = 1
+		relative_position_id = Crush_Protesters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Silence_The_People
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Crush_Protesters }
+		
+		x = 0
+		y = 1
+		relative_position_id = Crush_Protesters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Hide_No_More
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Crush_Protesters }
+		
+		x = -2
+		y = 1
+		relative_position_id = Crush_Protesters
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = American_Police_State
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Silence_The_People }
+		prerequisite = { focus = Increase_Secret_Police_Overlook }
+		prerequisite = { focus = Hide_No_More }
+		
+		x = 0
+		y = 1
+		relative_position_id = Silence_The_People
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = American_Anschluss
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = American_Police_State }
+		
+		x = 0
+		y = 1
+		relative_position_id = American_Police_State
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Shuffle_Staff
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = American_Anschluss }
+		
+		x = 0
+		y = 1
+		relative_position_id = American_Anschluss
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Central_American_Threat
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Shuffle_Staff }
+		
+		x = 0
+		y = 1
+		relative_position_id = Shuffle_Staff
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Crush_Russia
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Central_American_Threat }
+		
+		x = -1
+		y = 1
+		relative_position_id = Central_American_Threat
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = Defeat_The_Inferior_Democracies
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Central_American_Threat }
+		
+		x = 1
+		y = 1
+		relative_position_id = Central_American_Threat
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = American_Puppet_Governments
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Defeat_The_Inferior_Democracies focus = Crush_Russia }
+		
+		x = 0
+		y = 2
+		relative_position_id = Central_American_Threat
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = American_World_Order
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = American_Puppet_Governments }
+		
+		x = 0
+		y = 1
+		relative_position_id = American_Puppet_Governments
 		
 		cost = 10
 

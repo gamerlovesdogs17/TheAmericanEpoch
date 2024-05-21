@@ -1,0 +1,576 @@
+﻿	shared_focus = {  
+		id = Industrial_Development_Plans_ind
+		icon = GFX_focus_NORDIC_dem_capstone_navy
+		
+		x = 55
+		y = 0
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}	
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Invest_In_The_Military_Industrial_Complex_ind
+		icon = GFX_focus_NORDIC_dem_materiel
+		prerequisite = { focus = Industrial_Development_Plans_ind }
+		
+		x = 1
+		y = 1
+		relative_position_id = Industrial_Development_Plans_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Construction_Development_Centers_ind
+		icon = GFX_focus_NORDIC_dem_civilian
+		prerequisite = { focus = Industrial_Development_Plans_ind }
+		
+		x = -1
+		y = 1
+		relative_position_id = Industrial_Development_Plans_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Finance_Scientific_Centers_ind
+		icon = GFX_focus_NORDIC_dem_research
+		prerequisite = { focus = Invest_In_The_Military_Industrial_Complex_ind }
+		prerequisite = { focus = Construction_Development_Centers_ind }
+		
+		x = 0
+		y = 2
+		relative_position_id = Industrial_Development_Plans_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Develop_Industrial_Base_ind
+		icon = GFX_focus_NORDIC_dem_capstone_civilian
+		prerequisite = { focus = Construction_Development_Centers_ind }
+		
+		x = -1
+		y = 1
+		relative_position_id = Construction_Development_Centers_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Industrial_Expansion_Operations_ind
+		icon = GFX_focus_NORDIC_com_civilian
+		prerequisite = { focus = Develop_Industrial_Base_ind }
+		
+		x = 0
+		y = 1
+		relative_position_id = Develop_Industrial_Base_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Infrastructure_Construction_Plans_ind
+		icon = GFX_focus_NORDIC_dem_selector_civilian
+		prerequisite = { focus = Construction_Development_Centers_ind }
+		
+		x = -3
+		y = 1
+		relative_position_id = Construction_Development_Centers_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Infrastructure_Projects_ind
+		icon = GFX_focus_NORDIC_com_capstone_civilian
+		prerequisite = { focus = Infrastructure_Construction_Plans_ind }
+		
+		x = 0
+		y = 1
+		relative_position_id = Infrastructure_Construction_Plans_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Reform_Civilian_Industry_ind
+		icon = GFX_focus_NORDIC_com_selector_civilian
+		prerequisite = { focus = Industrial_Expansion_Operations_ind }
+		prerequisite = { focus = Infrastructure_Projects_ind }
+		
+		x = -1
+		y = 1
+		relative_position_id = Industrial_Expansion_Operations_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}	
+		
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}	
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Fund_Military_Industry_ind
+		icon = GFX_focus_NORDIC_dem_institution_1
+		prerequisite = { focus = Invest_In_The_Military_Industrial_Complex_ind }
+		
+		x = 1
+		y = 1
+		relative_position_id = Invest_In_The_Military_Industrial_Complex_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Develop_Further_Military_Industry_ind
+		icon = GFX_focus_NORDIC_com_materiel
+		prerequisite = { focus = Fund_Military_Industry_ind }
+		
+		x = 0
+		y = 1
+		relative_position_id = Fund_Military_Industry_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	shared_focus = {  
+		id = Push_Scientific_Advancements_ind
+		icon = GFX_focus_NORDIC_com_selector_research
+		prerequisite = { focus = Finance_Scientific_Centers_ind }
+		
+		x = 0
+		y = 2
+		relative_position_id = Finance_Scientific_Centers_ind
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
