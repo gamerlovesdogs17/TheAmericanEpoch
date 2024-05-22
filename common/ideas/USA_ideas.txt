@@ -1,0 +1,79 @@
+ideas = {
+	country = {
+		USA_communist_support_growing_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				has_civil_war = no
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.03
+			}
+		}
+		USA_communist_union_strikes_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				has_civil_war = no
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.05
+				stability_weekly = -0.01
+				industrial_capacity_dockyard = -0.03
+				industrial_capacity_factory = -0.03
+			}
+		}
+		USA_loyal_staff_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.01
+				stability_weekly = 0.01				
+				war_support_weekly_factor = 0.01
+			}
+		}
+		USA_industrialist_exiled_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = -0.03
+				industrial_capacity_factory = -0.03
+				consumer_goods_factor = -0.1
+			}
+		}
+		USA_communal_society_exiled_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+}

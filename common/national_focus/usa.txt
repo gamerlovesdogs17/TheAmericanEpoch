@@ -31,9 +31,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 150	
 		}
 		
 		ai_will_do = {
@@ -57,9 +55,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			custom_effect_tooltip = usa_strength_through_change
 		}
 		
 		ai_will_do = {
@@ -84,10 +80,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		hidden_effect = {
+			activate_decision = USA_civilwar_communist_dec
 		}
+			add_timed_idea = {
+				idea = USA_communist_support_growing_I
+				days = 180
+			}
+		}
+		
+
 		
 		ai_will_do = {
 			factor = 5
@@ -102,16 +104,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = For_The_Workers_Revolution
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_communist_union_strikes_I
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -127,16 +131,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = Rally_The_Unions
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+				
+			add_stability = -0.02
 		}
 		
 		ai_will_do = {
@@ -152,16 +159,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = Create_Armed_Militas
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			add_political_power = -35
 		}
 		
 		ai_will_do = {
@@ -177,16 +186,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = Meet_Soviet_Diplomats
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_political_power = 50
 		}
 		
 		ai_will_do = {
@@ -202,16 +213,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = Incorporate_The_Farm_Workers
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -230,13 +243,13 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_war = no
+			has_government = communism
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 100
+			add_stability = -0.01
 		}
 		
 		ai_will_do = {
@@ -255,13 +268,13 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_war = no
+			has_government = communism
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 50
+			add_stability = -0.01
 		}
 		
 		ai_will_do = {
@@ -280,11 +293,12 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_war = no
+			has_government = communism
 		}
 		
 		completion_reward = {
-			
+			add_ideas = USA_loyal_staff_I
 			
 			
 		}
@@ -311,9 +325,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 		
 		ai_will_do = {
@@ -336,9 +353,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_industrialist_exiled_I
 		}
 		
 		ai_will_do = {
@@ -361,9 +376,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_political_power = 100
+			add_stability = -0.03
 		}
 		
 		ai_will_do = {
@@ -387,9 +405,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = -10
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = 0.05
 		}
 		
 		ai_will_do = {
@@ -412,9 +433,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		add_stability = 0.01
 		}
 		
 		ai_will_do = {
@@ -437,9 +460,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		add_political_power = 150
+		add_stability = 0.03
 		}
 		
 		ai_will_do = {
@@ -462,9 +488,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_communal_society_exiled_I
 		}
 		
 		ai_will_do = {
@@ -488,9 +512,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = SOV modifier = large_decrease }
 		}
 		
 		ai_will_do = {
@@ -514,9 +536,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = SOV modifier = huge_increase }
 		}
 		
 		ai_will_do = {
@@ -539,9 +559,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			 add_command_power = 35
 		}
 		
 		ai_will_do = {
@@ -564,8 +582,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
 			
 		}
 		
@@ -868,9 +884,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 100
+			add_stability = -0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
 		}
 		
 		ai_will_do = {
