@@ -33,3 +33,21 @@ USA_communist_civil_war = {
 	
 	priority = 90
 }
+
+USA_democratic_civil_war = {
+	icon = FRA_scw_intervention_republicans_focus
+	visible = {
+		has_completed_focus = Free_The_American_People
+			NOT = {
+			has_government = democratic
+			}
+	}
+	allowed = {
+		original_tag = USA
+	}
+	available = {
+		has_completed_focus = Free_The_American_People
+	}
+	
+	priority = 90
+}

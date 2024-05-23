@@ -421,6 +421,8 @@ focus_tree = {
 		id = Party_Education_Program
 		icon = GFX_thisgfxiswrong
 		prerequisite = { focus = Cult_of_Personality }
+		prerequisite = { focus = Consolidate_Power }
+		prerequisite = { focus = Party_Purge }
 		
 		x = 0
 		y = 1
@@ -475,7 +477,7 @@ focus_tree = {
 	focus = {
 		id = Communal_Society
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Party_Education_Program focus = Party_Purge focus = Consolidate_Power }
+		prerequisite = { focus = Party_Education_Program }
 		
 		x = 0
 		y = 1
@@ -488,7 +490,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = USA_communal_society_exiled_I
+			add_ideas = USA_communal_society_I
 		}
 		
 		ai_will_do = {
@@ -513,6 +515,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_opinion_modifier = { target = SOV modifier = large_decrease }
+		SOV = { add_opinion_modifier = { target = SOV modifier = large_decrease } }
 		}
 		
 		ai_will_do = {
@@ -537,6 +540,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_opinion_modifier = { target = SOV modifier = huge_increase }
+			SOV = { add_opinion_modifier = { target = USA modifier = huge_increase } }
 		}
 		
 		ai_will_do = {
@@ -582,7 +586,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			SOV = { add_to_faction = USA }
 		}
 		
 		ai_will_do = {
@@ -605,9 +609,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_faction = "Global Communist League"
 		}
 		
 		ai_will_do = {
@@ -615,7 +617,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Invite_Communists_of_The_World
+		id = Plan_Future_Moves
 		icon = GFX_thisgfxiswrong
 		prerequisite = { focus = Formulate_Communist_Alliance }
 		
@@ -630,9 +632,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 50
 		}
 		
 		ai_will_do = {
@@ -655,9 +655,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CAN
+			}
 		}
 		
 		ai_will_do = {
@@ -680,9 +681,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
 		}
 		
 		ai_will_do = {
@@ -692,11 +694,11 @@ focus_tree = {
 	focus = {
 		id = Number_5_International
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Invite_Communists_of_The_World }
+		prerequisite = { focus = Plan_Future_Moves }
 		
 		x = 0
 		y = 1
-		relative_position_id = Invite_Communists_of_The_World
+		relative_position_id = Plan_Future_Moves
 		
 		cost = 10
 
@@ -705,9 +707,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			set_faction_name = "5th International"
 		}
 		
 		ai_will_do = {
@@ -730,9 +730,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MEX
+			}
 		}
 		
 		ai_will_do = {
@@ -756,9 +757,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_global_revolution_I
 		}
 		
 		ai_will_do = {
@@ -768,9 +767,9 @@ focus_tree = {
 	focus = {
 		id = Crush_The_Capitalists
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Plans_for_Global_Revolution focus = Joint_American_Soviet_Planning }
+		prerequisite = { focus = Plans_for_Global_Revolution }
 		prerequisite = { focus = March_Down_South }
-		
+		prerequisite = { focus = Joint_American_Soviet_Planning }
 		x = 3
 		y = 2
 		relative_position_id = Plans_for_Global_Revolution
@@ -782,9 +781,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = RAJ
+			}
 		}
 		
 		ai_will_do = {
@@ -808,9 +808,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = POL modifier = large_increase }
+			POL = { add_opinion_modifier = { target = USA modifier = large_increase } }
+			add_opinion_modifier = { target = HUN modifier = large_increase }
+			HUN = { add_opinion_modifier = { target = USA modifier = large_increase } }
+			add_opinion_modifier = { target = ROM modifier = large_increase }
+			ROM = { add_opinion_modifier = { target = USA modifier = large_increase } }
 		}
 		
 		ai_will_do = {
@@ -833,9 +836,22 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = HOL
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = BEL
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ITA
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YUG
+			}
 		}
 		
 		ai_will_do = {
@@ -859,9 +875,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 50
 		}
 		
 		ai_will_do = {
@@ -913,9 +927,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		hidden_effect = {
+			activate_decision = USA_civilwar_democratic_dec
+		}
+			add_ideas = USA_democratic_support_growing_I
 		}
 		
 		ai_will_do = {
@@ -932,16 +947,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = Free_The_American_People
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_democratic_protests_I
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -958,16 +975,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = Unite_Protesters
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_stability = -0.02
 		}
 		
 		ai_will_do = {
@@ -984,16 +1003,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = Rally_Opposition
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			add_political_power = -35
 		}
 		
 		ai_will_do = {
@@ -1010,16 +1031,18 @@ focus_tree = {
 		y = 2
 		relative_position_id = Build_Hideouts
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			add_political_power = 50
 		}
 		
 		ai_will_do = {
@@ -1039,13 +1062,12 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_war = no
+			has_government = democratic
 		}
 		
 		completion_reward = {
-			
-			
-			
+			custom_effect_tooltip = usa_reopen_congress
 		}
 		
 		ai_will_do = {
@@ -1064,13 +1086,16 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_war = no
+			has_government = democratic
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = -10
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -1094,9 +1119,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_stability = 0.02
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
 		}
 		
 		ai_will_do = {
@@ -1120,9 +1147,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		hold_election = ROOT
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "1966.12.17"
+				election_frequency = 48
+				long_name = "Democratic Party"
+				name = "Democratic Party"
+			}
 		}
 		
 		ai_will_do = {
@@ -1146,9 +1179,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
 		}
 		
 		ai_will_do = {
@@ -1172,9 +1206,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_stability = 0.05
+			add_political_power = 50
 		}
 		
 		ai_will_do = {
@@ -1198,9 +1231,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_bill_of_rights_liberties_I
 		}
 		
 		ai_will_do = {
@@ -1224,9 +1255,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_stability = 0.02
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
 		}
 		
 		ai_will_do = {
@@ -1243,16 +1276,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = Return_Protections_of_Bill_of_Rights_Liberties
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 100
 		}
 		
 		ai_will_do = {
@@ -1269,16 +1300,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = We_Got_More_Work_To_Do
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_stability = 0.1
 		}
 		
 		ai_will_do = {
@@ -1295,16 +1324,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = We_Apologize_to_The_American_People
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 100
 		}
 		
 		ai_will_do = {
@@ -1327,9 +1354,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = -10
 		}
 		
 		ai_will_do = {
@@ -1352,9 +1377,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			custom_effect_tooltip = usa_limit_presidental_terms
 		}
 		
 		ai_will_do = {
@@ -1373,13 +1396,14 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
 		}
 		
 		ai_will_do = {
@@ -1403,9 +1427,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			swap_ideas = {
+    remove_idea = USA_bill_of_rights_liberties_I
+    add_idea = USA_bill_of_rights_liberties_II
+}
 		}
 		
 		ai_will_do = {
@@ -1428,9 +1453,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		swap_ideas = {
+				remove_idea = USA_secret_police_I
+				add_idea = USA_secret_police_II
+			}
 		}
 		
 		ai_will_do = {
@@ -1455,9 +1481,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_land_of_the_free_I
 		}
 		
 		ai_will_do = {
@@ -1480,9 +1504,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			remove_ideas = USA_secret_police_II
 		}
 		
 		ai_will_do = {
@@ -1505,9 +1527,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_stability = 0.05
 		}
 		
 		ai_will_do = {
@@ -1515,7 +1535,7 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = Join_the_Democratic_League
+		id = Join_The_Democratic_League
 		icon = GFX_thisgfxiswrong
 		prerequisite = { focus = Perform_First_Election }
 		
@@ -1530,9 +1550,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			RAJ = { add_to_faction = USA }
 		}
 		
 		ai_will_do = {
@@ -1542,11 +1560,11 @@ focus_tree = {
 		focus = {
 		id = Global_Operations
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Join_the_Democratic_League }
+		prerequisite = { focus = Join_The_Democratic_League }
 		
 		x = -3
 		y = 1
-		relative_position_id = Join_the_Democratic_League
+		relative_position_id = Join_The_Democratic_League
 		
 		cost = 10
 
@@ -1555,9 +1573,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 50
 		}
 		
 		ai_will_do = {
@@ -1567,11 +1583,11 @@ focus_tree = {
 		focus = {
 		id = Request_Alliance_Ownership
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Join_the_Democratic_League }
+		prerequisite = { focus = Join_The_Democratic_League }
 		
 		x = 0
 		y = 2
-		relative_position_id = Join_the_Democratic_League
+		relative_position_id = Join_The_Democratic_League
 		
 		cost = 10
 
@@ -1580,8 +1596,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
 			
 		}
 		
@@ -1592,11 +1606,11 @@ focus_tree = {
 		focus = {
 		id = Diplomatic_Assurances
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Join_the_Democratic_League }
+		prerequisite = { focus = Join_The_Democratic_League }
 		
 		x = 3
 		y = 1
-		relative_position_id = Join_the_Democratic_League
+		relative_position_id = Join_The_Democratic_League
 		
 		cost = 10
 
@@ -1605,9 +1619,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_named_threat = {
+				threat = -5
+				name = "Diplomatic Assurances"
+			}
 		}
 		
 		ai_will_do = {
@@ -1630,9 +1645,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = RAJ modifier = large_increase }
+			RAJ = { add_opinion_modifier = { target = USA modifier = large_increase } }
 		}
 		
 		ai_will_do = {
@@ -1655,9 +1669,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = MEX modifier = large_increase }
+			MEX = { add_opinion_modifier = { target = USA modifier = large_increase } }
 		}
 		
 		ai_will_do = {
@@ -1680,9 +1693,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = GRE modifier = large_increase }
+			GRE = { add_opinion_modifier = { target = USA modifier = large_increase } }
 		}
 		
 		ai_will_do = {
@@ -1705,9 +1717,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = TUR modifier = large_increase }
+			TUR = { add_opinion_modifier = { target = USA modifier = large_increase } }
 		}
 		
 		ai_will_do = {
@@ -1730,9 +1741,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			ENG = { add_opinion_modifier = { target = USA modifier = large_increase } }
+			add_political_power = -10
 		}
 		
 		ai_will_do = {
@@ -1755,9 +1765,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			ENG = { country_event = usa.1 }
 		}
 		
 		ai_will_do = {
@@ -1780,9 +1788,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			FRA = { country_event = usa.2 }
 		}
 		
 		ai_will_do = {
@@ -1805,9 +1811,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			YUG = { add_popularity = {
+    ideology = democratic
+    popularity = 0.1
+} }
 		}
 		
 		ai_will_do = {
@@ -1830,9 +1837,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			YUG = { add_ideas = USA_yugoslav_propaganda_I }
 		}
 		
 		ai_will_do = {
@@ -1859,8 +1864,6 @@ focus_tree = {
 		
 		completion_reward = {
 			
-			
-			
 		}
 		
 		ai_will_do = {
@@ -1883,9 +1886,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
 		}
 		
 		ai_will_do = {
@@ -1909,8 +1913,6 @@ focus_tree = {
 		
 		completion_reward = {
 			
-			
-			
 		}
 		
 		ai_will_do = {
@@ -1929,16 +1931,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = Unite_Protesters
 		
-		cost = 10
+		cost = 2
 
 		available = {
+			has_war = no
+			OR = { has_idea = USA_communist_union_strikes_I has_idea = USA_democratic_protests_I }
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 50
 		}
 		
 		ai_will_do = {
@@ -1955,16 +1957,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = Unite_Protesters
 		
-		cost = 10
+		cost = 2
 
 		available = {
-			
+			has_war = no
+			OR = { has_idea = USA_communist_union_strikes_I has_idea = USA_democratic_protests_I }
 		}
 		
 		completion_reward = {
-			
-			
-			
+			remove_ideas = {
+				USA_communist_union_strikes_I
+				USA_democratic_protests_I
+			}
 		}
 		
 		ai_will_do = {

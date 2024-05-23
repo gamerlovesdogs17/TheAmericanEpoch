@@ -1,0 +1,45 @@
+﻿add_namespace = usa
+
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = { 
+		name = usa.1.a
+		RAJ = { add_to_faction = ENG }
+	}
+	
+	option = { 
+		name = usa.1.b
+	}
+}
+
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = { 
+		name = usa.2.a
+		RAJ = { add_to_faction = FRA }
+	}
+	
+	option = { 
+		name = usa.2.b
+	}
+}

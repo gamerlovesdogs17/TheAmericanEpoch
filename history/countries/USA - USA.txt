@@ -11,6 +11,7 @@ add_to_faction = ENG
 add_to_faction = FRA
 add_to_faction = SPR
 starting_train_buffer = 5
+add_ideas = USA_secret_police_I
 
 create_country_leader = {
 	name = "Gerald L. K. Smith"

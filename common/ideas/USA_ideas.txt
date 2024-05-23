@@ -61,7 +61,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
-		USA_communal_society_exiled_I = {
+		USA_communal_society_I = {
 			picture = GFX_thisgfxiswrong
 			
 			available = {
@@ -73,6 +73,126 @@ ideas = {
 			modifier = {
 				industrial_capacity_dockyard = 0.05
 				industrial_capacity_factory = 0.05
+			}
+		}
+		USA_global_revolution_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				offence = 0.1
+			}
+		}
+		USA_democratic_support_growing_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				has_civil_war = no
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.03
+			}
+		}
+		USA_democratic_protests_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				has_civil_war = no
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_weekly = -0.01
+				industrial_capacity_dockyard = -0.03
+				industrial_capacity_factory = -0.03
+			}
+		}
+		USA_bill_of_rights_liberties_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_weekly = 0.01
+			}
+		}
+		USA_bill_of_rights_liberties_II = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_weekly = 0.05
+			}
+		}
+		USA_secret_police_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.01
+				political_power_gain = 0.1
+				war_support_weekly_factor = -0.1
+			}
+		}
+		USA_secret_police_II = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}		
+		USA_land_of_the_free_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			stability_weekly = 0.01
+			}
+		}
+		USA_yugoslav_propaganda_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			democratic_drift = 0.03
 			}
 		}
 	}
