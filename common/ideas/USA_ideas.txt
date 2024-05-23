@@ -195,5 +195,57 @@ ideas = {
 			democratic_drift = 0.03
 			}
 		}
+		USA_world_liberator_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			democratic_drift = 0.03
+			political_power_gain = 0.05
+			offence = 0.1
+			}
+		}
+		USA_american_influence_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			neutrality_drift = 0.03
+			political_power_gain = -0.05
+			}
+		}
+		USA_the_american_emperor_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			neutrality_drift = 0.03
+			political_power_gain = 0.1
+			}
+		}
+		USA_monarchial_education_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			neutrality_drift = 0.01
+			}
+		}
 	}
 }

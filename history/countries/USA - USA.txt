@@ -22,7 +22,6 @@ create_country_leader = {
 		#
 	}
 }
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1964.3.11"
@@ -126,7 +125,6 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 	}
-	add_ideas = bureau_of_ordnance_spirit
 }
 
 if = {
@@ -172,12 +170,10 @@ if = {
 		improved_airplane_launcher = 1
 		basic_dp_light_battery = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 ##Monroe Doctrine
 IF = {
 	limit = { has_dlc = "Trial of Allegiance" }
-	add_ideas = USA_monroe_doctrine_enforcer
 }
 IF = {
 	limit = { NOT = { has_dlc = "Trial of Allegiance" }	}

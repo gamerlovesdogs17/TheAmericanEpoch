@@ -24,7 +24,7 @@ focus_tree = {
 		x = 25
 		y = 0
 		
-		cost = 10
+		cost = 1
 
 		available = {
 			
@@ -767,9 +767,8 @@ focus_tree = {
 	focus = {
 		id = Crush_The_Capitalists
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Plans_for_Global_Revolution }
-		prerequisite = { focus = March_Down_South }
-		prerequisite = { focus = Joint_American_Soviet_Planning }
+		prerequisite = { focus = Plans_for_Global_Revolution focus = March_Down_South }
+		prerequisite = { focus = March_Down_South focus = Joint_American_Soviet_Planning }
 		x = 3
 		y = 2
 		relative_position_id = Plans_for_Global_Revolution
@@ -1596,7 +1595,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			RAJ = { country_event = usa.3 }
 		}
 		
 		ai_will_do = {
@@ -1837,7 +1836,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			YUG = { add_ideas = USA_yugoslav_propaganda_I }
+			YUG = { add_timed_idea = {
+    idea = USA_yugoslav_propaganda_I
+    days = 180
+} }
 		}
 		
 		ai_will_do = {
@@ -1863,7 +1865,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 		
 		ai_will_do = {
@@ -1912,7 +1914,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			add_ideas = USA_world_liberator_I
 		}
 		
 		ai_will_do = {
@@ -1986,16 +1988,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = America_Strong
 		
-		cost = 10
+		cost = 1
 
 		available = {
 			
 		}
 		
 		completion_reward = {
-			
-			
-			
+			custom_effect_tooltip = usa_ballot_stuffing
 		}
 		
 		ai_will_do = {
@@ -2014,13 +2014,11 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			always = false
 		}
 		
 		completion_reward = {
-			
-			
-			
+			custom_effect_tooltip = usa_smiths_1966_inaugural_address
 		}
 		
 		ai_will_do = {
@@ -2039,13 +2037,11 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_government = neutrality
 		}
 		
 		completion_reward = {
-			
-			
-			
+			ENG = { add_ideas = USA_american_influence_I }
 		}
 		
 		ai_will_do = {
@@ -2068,9 +2064,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			FRA = { add_ideas = USA_american_influence_I }
 		}
 		
 		ai_will_do = {
@@ -2093,9 +2087,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			ENG = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.1
+} }
 		}
 		
 		ai_will_do = {
@@ -2114,13 +2109,11 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			ENG = { neutrality > 0.5 }
 		}
 		
 		completion_reward = {
-			
-			
-			
+			ENG = { country_event = usa.11 }
 		}
 		
 		ai_will_do = {
@@ -2139,13 +2132,11 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			FRA = { neutrality > 0.5 }
 		}
 		
 		completion_reward = {
-			
-			
-			
+			FRA = { country_event = usa.14 }
 		}
 		
 		ai_will_do = {
@@ -2168,9 +2159,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			CAN = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.1
+} }
 		}
 		
 		ai_will_do = {
@@ -2193,9 +2185,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			CAN = { add_ideas = USA_american_influence_I }
 		}
 		
 		ai_will_do = {
@@ -2214,13 +2204,16 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			CAN = { neutrality > 0.5 }
 			
 		}
 		
+		bypass = {
+		has_completed_focus = Demand_Canadian_Subjagation
+		}
+		
 		completion_reward = {
-			
-			
-			
+			CAN = { country_event = usa.17 }
 		}
 		
 		ai_will_do = {
@@ -2238,13 +2231,26 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			GER = { is_puppet_of = USA }
+			AUS = { is_puppet_of = USA }
+			CZE = { is_puppet_of = USA }
 		}
 		
 		completion_reward = {
-			
-			
-			
+			GER = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.5
+} }
+
+			AUS = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.5
+} }
+
+			CZE = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.5
+} }
 		}
 		
 		ai_will_do = {
@@ -2268,9 +2274,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 100
 		}
 		
 		ai_will_do = {
@@ -2293,9 +2297,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 50
+			add_popularity = {
+    ideology = neutrality
+    popularity = 0.01
+}
 		}
 		
 		ai_will_do = {
@@ -2318,9 +2324,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+						add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+}
 		}
 		
 		ai_will_do = {
@@ -2344,9 +2351,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+						add_popularity = {
+    ideology = neutrality
+    popularity = 0.1
+}
+		add_political_power = -10
 		}
 		
 		ai_will_do = {
@@ -2370,9 +2379,13 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			set_party_name = {
+    ideology = neutrality
+    long_name = "King's American Monarchial League"
+    name = "American Monarchy"
+}
+
+		add_ideas = USA_the_american_emperor_I
 		}
 		
 		ai_will_do = {
@@ -2395,9 +2408,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 100
 		}
 		
 		ai_will_do = {
@@ -2420,8 +2431,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
+			add_ideas = USA_monarchial_education_I
 			
 		}
 		
@@ -2446,9 +2456,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			set_cosmetic_tag = USA_monarchy
 		}
 		
 		ai_will_do = {
@@ -2500,9 +2508,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 35
 		}
 		
 		ai_will_do = {
@@ -2789,6 +2795,10 @@ focus_tree = {
 
 		available = {
 			
+		}
+		
+		bypass = {
+		has_completed_focus = Ultimatium_For_Canada
 		}
 		
 		completion_reward = {

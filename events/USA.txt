@@ -7,18 +7,17 @@ country_event = {
 	picture = GFX_report_event_usa_amelia_earhart_airplane
 
 	fire_only_once = yes
-	
-	mean_time_to_happen = {
-		days = 30
-	}
+	is_triggered_only = yes
 	
 	option = { 
 		name = usa.1.a
 		RAJ = { add_to_faction = ENG }
+		USA = { country_event = usa.7 }
 	}
 	
 	option = { 
 		name = usa.1.b
+		USA = { country_event = usa.8 }
 	}
 }
 
@@ -29,17 +28,358 @@ country_event = {
 	picture = GFX_report_event_usa_amelia_earhart_airplane
 
 	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.2.a
+		RAJ = { add_to_faction = FRA }
+		USA = { country_event = usa.9 }
+	}
+	
+	option = { 
+		name = usa.2.b
+		USA = { country_event = usa.10 }
+	}
+}
+
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.3.a
+		USA = { create_faction = "Democratic League" }
+		USA = { add_to_faction = RAJ } 
+		USA = { add_to_faction = KOR }
+		USA = { add_to_faction = BRA }
+		USA = { add_to_faction = SAF }
+		USA = { add_to_faction = GRE }
+		USA = { add_to_faction = TUR }
+		USA = { add_to_faction = BAN }
+		USA = { add_to_faction = BRM }
+		USA = { country_event = usa.4 } 
+	}
+	
+	option = { 
+		name = usa.3.b
+		add_opinion_modifier = { target = USA modifier = large_decrease }
+		USA = { country_event = usa.5 } 
+	}
+}
+
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 30
 	}
 	
 	option = { 
-		name = usa.2.a
-		RAJ = { add_to_faction = FRA }
+		name = usa.4.a
+	}
+}
+
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 30
 	}
 	
 	option = { 
-		name = usa.2.b
+		name = usa.5.a
+	}
+	option = { 
+		name = usa.5.b
+		create_faction = "Democratic Treaty Organization"
+	}
+}
+
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	
+	trigger = { date > 1966.01.20 has_completed_focus = Ballot_Stuffing }
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = { 
+		name = usa.6.a
+		hidden_effect = { complete_national_focus = Smiths_1966_Inaugural_Address }
+		complete_national_focus = Constitutional_Modifications_quote_and_quote_For_The_People
+	}
+	option = { 
+		name = usa.6.b
+		hidden_effect = { complete_national_focus = Smiths_1966_Inaugural_Address }
+		complete_national_focus = Stand_For_quote_and_quote_Democracy
+	}
+	option = { 
+		name = usa.6.c
+		hidden_effect = { complete_national_focus = Smiths_1966_Inaugural_Address }
+		complete_national_focus = Path_of_Royalty
+	}
+}
+
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.7.a
+	}
+}
+
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.8.a
+	}
+	option = { 
+		name = usa.8.b
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
+	}
+}
+
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.9.a
+	}
+}
+
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.10.a
+	}
+	option = { 
+		name = usa.10.b
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
+	}
+}
+
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.11.a
+		USA = { puppet = ENG }
+		USA = { country_event = usa.12 }
+	}
+	
+	option = { 
+		name = usa.11.b
+		USA = { country_event = usa.13 }
+	}
+}
+
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.12.a
+	}
+}
+
+country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.13.a
+	}
+	
+	option = { 
+		name = usa.13.b
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
+	}
+}
+
+country_event = {
+	id = usa.14
+	title = usa.14.t
+	desc = usa.14.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.14.a
+		USA = { puppet = FRA }
+		USA = { country_event = usa.15 }
+	}
+	
+	option = { 
+		name = usa.14.b
+		USA = { country_event = usa.16 }
+	}
+}
+
+country_event = {
+	id = usa.15
+	title = usa.15.t
+	desc = usa.15.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.15.a
+	}
+}
+
+country_event = {
+	id = usa.16
+	title = usa.16.t
+	desc = usa.16.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.16.a
+	}
+	
+	option = { 
+		name = usa.16.b
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
+	}
+}
+
+country_event = {
+	id = usa.17
+	title = usa.17.t
+	desc = usa.17.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.17.a
+		USA = { puppet = CAN }
+		USA = { country_event = usa.18 }
+	}
+	
+	option = { 
+		name = usa.17.b
+		USA = { country_event = usa.19 }
+	}
+}
+
+country_event = {
+	id = usa.18
+	title = usa.18.t
+	desc = usa.18.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.18.a
+	}
+}
+
+country_event = {
+	id = usa.19
+	title = usa.19.t
+	desc = usa.19.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.19.a
+	}
+	
+	option = { 
+		name = usa.19.b
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CAN
+			}
 	}
 }
