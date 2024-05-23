@@ -833,14 +833,6 @@ if = {
 
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
-add_ideas = {	
-	home_of_revolution
-	trotskyite_plot_nsb
-	SOV_politicized_military
-
-	SOV_genrikh_yagoda #NKVD Chief (political advisor)
-}
-
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -849,13 +841,6 @@ add_ideas = {
 	set_war_support = 0.55 #Needs at least 0.5 to make sense with War Economy Law
 	
 	#DESIGNERS AND LAWS
-	add_ideas = {
-		stalingrad_tractor_factory
-		SOV_tula_arms_plant
-		#laws
-		war_economy
-		extensive_conscription
-	}
 
 
 	###################
@@ -869,17 +854,6 @@ add_ideas = {
 	add_ideas = vladimir_kasatonov
 
 	#PURGE NSs
-	add_timed_idea = {
-		idea = SOV_understaffed_bureaucracy
-		days = 365
-	}
-	add_ideas = {
-		SOV_anti_soviet_military_thinking_banned_army
-		SOV_purged_junior_army_officers_2
-		SOV_anti_soviet_military_thinking_banned_navy
-		SOV_purged_junior_navy_officers_1
-		SOV_anti_soviet_military_thinking_banned_airforce
-	}
 
 	SOV_remove_paranoia_effect = yes
 

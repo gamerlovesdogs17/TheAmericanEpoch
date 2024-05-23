@@ -154,9 +154,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_weekly = -0.01
-				political_power_gain = 0.1
-				war_support_weekly_factor = -0.1
+				stability_weekly = -0.001
+				political_power_gain = 2
+				war_support_weekly_factor = -0.03
 			}
 		}
 		USA_secret_police_II = {
