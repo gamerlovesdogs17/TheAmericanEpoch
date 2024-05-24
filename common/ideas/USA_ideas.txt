@@ -155,7 +155,7 @@ ideas = {
 
 			modifier = {
 				stability_weekly = -0.001
-				political_power_gain = 2
+				political_power_gain = 0.05
 				war_support_weekly_factor = -0.03
 			}
 		}
@@ -168,7 +168,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_power_gain = 0.1
+				political_power_gain = 0.05
 			}
 		}		
 		USA_land_of_the_free_I = {
@@ -232,7 +232,7 @@ ideas = {
 
 			modifier = {
 			neutrality_drift = 0.03
-			political_power_gain = 0.1
+			political_power_gain = 0.05
 			}
 		}
 		USA_monarchial_education_I = {
@@ -245,6 +245,31 @@ ideas = {
 
 			modifier = {
 			neutrality_drift = 0.01
+			}
+		}
+		USA_the_kings_royal_military_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			offence = 0.05
+			defence = 0.1
+			}
+		}
+		USA_american_anglo_crown_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			political_power_gain = 0.05
 			}
 		}
 	}

@@ -2038,6 +2038,7 @@ focus_tree = {
 
 		available = {
 			has_government = neutrality
+			is_ally_with = ENG
 		}
 		
 		completion_reward = {
@@ -2060,7 +2061,8 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_government = neutrality
+			is_ally_with = FRA
 		}
 		
 		completion_reward = {
@@ -2083,7 +2085,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_government = neutrality
 		}
 		
 		completion_reward = {
@@ -2155,7 +2157,8 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_government = neutrality
+			is_ally_with = CAN
 		}
 		
 		completion_reward = {
@@ -2181,7 +2184,8 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			has_government = neutrality
+			is_ally_with = CAN
 		}
 		
 		completion_reward = {
@@ -2234,6 +2238,7 @@ focus_tree = {
 			GER = { is_puppet_of = USA }
 			AUS = { is_puppet_of = USA }
 			CZE = { is_puppet_of = USA }
+			has_government = neutrality
 		}
 		
 		completion_reward = {
@@ -2481,9 +2486,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 35
 		}
 		
 		ai_will_do = {
@@ -2926,7 +2929,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			ENG = { country_event = usa.20 }
 		}
 		
 		ai_will_do = {
@@ -2948,9 +2951,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			FRA = { country_event = usa.23 }
 		}
 		
 		ai_will_do = {
@@ -2969,13 +2970,34 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			NOT = {
+			country_exists = MEX
+			country_exists = GUA
+			country_exists = HON
+			country_exists = ELS
+			country_exists = NIC
+			country_exists = COS
+			country_exists = PAN
+			country_exists = COL
+			country_exists = VEN
+			country_exists = BRA
+			country_exists = ECU
+			country_exists = PRU
+			country_exists = BOL
+			country_exists = ARG
+			country_exists = URG
+			country_exists = PAR
+			country_exists = CHL
+			country_exists = HAI
+			country_exists = DOM
+			country_exists = CUB
+			country_exists = BLZ
+			country_exists = PUE
+			}
 		}
 		
 		completion_reward = {
-			
-			
-			
+			set_cosmetic_tag = USA_monarchy_america
 		}
 		
 		ai_will_do = {
@@ -2997,9 +3019,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_the_kings_royal_military_I
 		}
 		
 		ai_will_do = {
@@ -3021,9 +3041,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			custom_effect_tooltip = usa_american_anglo_union_monarchy
 		}
 		
 		ai_will_do = {
@@ -3045,9 +3063,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = ENG modifier = large_increase }
+			add_political_power = -10
 		}
 		
 		ai_will_do = {
@@ -3071,9 +3088,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			custom_effect_tooltip = usa_english_speakers_united
 		}
 		
 		ai_will_do = {
@@ -3096,9 +3111,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = ENG
+}
 		}
 		
 		ai_will_do = {
@@ -3119,10 +3135,12 @@ focus_tree = {
 			
 		}
 		
+		bypass = {
+		NOT = { country_exists = ENG }
+		}
+		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_american_anglo_crown_I
 		}
 		
 		ai_will_do = {
@@ -3140,13 +3158,22 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			ENG = { has_subject = AST }
+			ENG = { has_subject = NZL }
+			ENG = { has_subject = MAL }
+		}
+		
+		bypass = {
+		NOT = { country_exists = ENG }
+		NOT = { ENG = { has_subject = AST }
+			ENG = { has_subject = NZL }
+			ENG = { has_subject = MAL } }
 		}
 		
 		completion_reward = {
-			
-			
-			
+			puppet = AST
+			puppet = NZL
+			puppet = MAL
 		}
 		
 		ai_will_do = {
@@ -3154,7 +3181,7 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = Merge_Militaries
+		id = Merge_Navies
 		icon = GFX_thisgfxiswrong
 		prerequisite = { focus = American_Anglo_Commonwealth }
 		x = 0
@@ -3167,10 +3194,14 @@ focus_tree = {
 			
 		}
 		
+		bypass = {
+		NOT = { country_exists = ENG }
+		}
+		
 		completion_reward = {
-			
-			
-			
+			ENG = { transfer_navy = {
+    target = USA
+} }
 		}
 		
 		ai_will_do = {
@@ -3180,10 +3211,10 @@ focus_tree = {
 		focus = {
 		id = Common_Identity
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Merge_Militaries }
+		prerequisite = { focus = Merge_Navies }
 		x = 0
 		y = 1
-		relative_position_id = Merge_Militaries
+		relative_position_id = Merge_Navies
 		
 		cost = 10
 
@@ -3192,9 +3223,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			annex_country = {
+    target = ENG
+    transfer_troops = yes
+}
+		set_cosmetic_tag = USA_anglo_american_union
 		}
 		
 		ai_will_do = {
@@ -3216,9 +3249,70 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = CAN
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = SAF
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = LIB
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = RAJ
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = BAN
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = PAK
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = BRM
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = JOR
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = ISR
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = UAE
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = KUW
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = QAT
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = YEM
+}
 		}
 		
 		ai_will_do = {
@@ -3240,9 +3334,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = SOV
+}
 		}
 		
 		ai_will_do = {
