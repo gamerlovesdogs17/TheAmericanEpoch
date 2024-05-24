@@ -2783,6 +2783,7 @@ focus_tree = {
 			factor = 5
 		}
 	}
+	######
 		focus = {
 		id = Demand_Canadian_Subjagation
 		icon = GFX_thisgfxiswrong
@@ -2802,9 +2803,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			CAN = { country_event = usa.17 }
 		}
 		
 		ai_will_do = {
@@ -2826,9 +2825,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MEX
+			}
 		}
 		
 		ai_will_do = {
@@ -2850,9 +2850,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = BRA
+}
 		}
 		
 		ai_will_do = {
@@ -2874,9 +2875,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = DOM
+}
 		}
 		
 		ai_will_do = {
@@ -2898,9 +2900,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = HAI
+}
 		}
 		
 		ai_will_do = {
@@ -2923,8 +2926,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
 			
 		}
 		
