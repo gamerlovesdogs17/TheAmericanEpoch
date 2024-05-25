@@ -2536,9 +2536,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 35
 		}
 		
 		ai_will_do = {
@@ -2560,9 +2558,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			news_event = usa.26
 		}
 		
 		ai_will_do = {
@@ -2584,9 +2580,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			news_event = usa.27
 		}
 		
 		ai_will_do = {
@@ -2608,9 +2602,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_habsburg_advisors_I
 		}
 		
 		ai_will_do = {
@@ -2633,9 +2625,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			set_cosmetic_tag = USA_americano_austrian_union
 		}
 		
 		ai_will_do = {
@@ -2657,9 +2647,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			annex_country = {
+    target = AUS
+    transfer_troops = no
+}
 		}
 		
 		ai_will_do = {
@@ -2681,9 +2672,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		set_cosmetic_tag = USA_habsburg_austro_hungary
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = HUN
+}
 		}
 		
 		ai_will_do = {
@@ -2705,9 +2698,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 100
+			add_command_power = 50
 		}
 		
 		ai_will_do = {
@@ -2729,9 +2721,36 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		set_cosmetic_tag = USA_slavic_union_habsburg
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = YUG
+}
+
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = ROM
+}
+
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = BUL
+}
+
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = POL
+}
+
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = SLO
+}
+
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = SOV
+}
 		}
 		
 		ai_will_do = {
@@ -2753,9 +2772,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			ENG = { country_event = usa.28 }
 		}
 		
 		ai_will_do = {
@@ -2773,13 +2790,11 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			NOT = { country_exists = ENG }
 		}
 		
 		completion_reward = {
-			
-			
-			
+			set_cosmetic_tag = USA_american_austro_hungarian_slavic_anglo_union_habsburg
 		}
 		
 		ai_will_do = {
@@ -3387,9 +3402,7 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_stability = 0.05
 		}
 		
 		ai_will_do = {
@@ -3411,9 +3424,12 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		add_stability = -0.03
+			add_political_power = 50
+			add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+}
 		}
 		
 		ai_will_do = {
@@ -3435,9 +3451,11 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+		add_political_power = -10
+			add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+}
 		}
 		
 		ai_will_do = {
@@ -3460,9 +3478,7 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_political_power = 150
 		}
 		
 		ai_will_do = {
@@ -3484,9 +3500,7 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 50
 		}
 		
 		ai_will_do = {
@@ -3509,9 +3523,7 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 35
 		}
 		
 		ai_will_do = {
@@ -3534,9 +3546,7 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 50
 		}
 		
 		ai_will_do = {
@@ -3558,9 +3568,10 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = PRC
+}
 		}
 		
 		ai_will_do = {
@@ -3582,9 +3593,10 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = BRA
+}
 		}
 		
 		ai_will_do = {
@@ -3606,9 +3618,10 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = SOV
+}
 		}
 		
 		ai_will_do = {
@@ -3630,9 +3643,10 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = RAJ
+}
 		}
 		
 		ai_will_do = {
@@ -3654,9 +3668,12 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_opinion_modifier = { target = RAJ modifier = large_decrease }
+			add_opinion_modifier = { target = SAF modifier = large_decrease }
+			add_opinion_modifier = { target = KOR modifier = large_decrease }
+			add_opinion_modifier = { target = GRE modifier = large_decrease }
+			add_opinion_modifier = { target = TUR modifier = large_decrease }
+			add_opinion_modifier = { target = BRA modifier = large_decrease }
 		}
 		
 		ai_will_do = {
@@ -3678,9 +3695,7 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_war_of_quote_unquote_liberation_I
 		}
 		
 		ai_will_do = {
@@ -3703,9 +3718,7 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_world_liberator_neutrality_I
 		}
 		
 		ai_will_do = {
@@ -3727,9 +3740,9 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_command_power = 50
+			add_political_power = 50
+			add_stability = 0.05
 		}
 		
 		ai_will_do = {
@@ -3751,17 +3764,27 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			CHL = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.1
+} }
+			add_political_power = -65
+			add_command_power = -35
+			CHL = { start_civil_war = {
+    ruling_party = democratic
+    ideology = neutrality
+    size = 0.8
+    capital = 279 }
 		}
 		
+
+	}
 		ai_will_do = {
 			factor = 5
 		}
 	}
 		focus = {
-		id = Invite_European_Countries
+		id = March_On_European_Countries
 		icon = GFX_thisgfxiswrong
 		prerequisite = { focus = Containment_Approach }
 		x = -1
@@ -3775,9 +3798,25 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = HOL
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = BEL
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = YUG
+}
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = POR
+}
 		}
 		
 		ai_will_do = {
@@ -3787,7 +3826,7 @@ create_wargoal = {
 		focus = {
 		id = Move_On_Vietnam
 		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = Invite_European_Countries focus = Secure_South_America }
+		prerequisite = { focus = March_On_European_Countries focus = Secure_South_America }
 		x = -1
 		y = 1
 		relative_position_id = Secure_South_America
@@ -3798,8 +3837,10 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = VIN
+}	
 			
 		}
 		
@@ -3822,9 +3863,17 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			ERI = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.1
+} }
+			add_political_power = -65
+			add_command_power = -35
+			ERI = { start_civil_war = {
+    ruling_party = democratic
+    ideology = neutrality
+    size = 0.8 }
+		}
 		}
 		
 		ai_will_do = {
@@ -3846,9 +3895,7 @@ create_wargoal = {
 		}
 		
 		completion_reward = {
-			
-			
-			
+			add_ideas = USA_american_influence_I
 		}
 		
 		ai_will_do = {
