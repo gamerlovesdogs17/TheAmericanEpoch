@@ -1,14 +1,7 @@
 ﻿add_ai_strategy = {
     type = alliance
-    id = "USA"
-    value = 1000
-}
-
-add_ai_strategy = {
-    type = alliance
-    id = "USA"
-    value = -1000
-	enable = { NOT = { has_idea = USA_american_influence_in_government_I } }
+    id = USA
+    value = 150
 }
 capital = 276
 USA = { add_to_faction = CAN }
