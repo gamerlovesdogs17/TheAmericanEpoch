@@ -931,7 +931,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
-	
+	}
 	SpriteType = {
 		name = "GFX_goal_Take_Properties_shine"
 		texturefile = "gfx/interface/goals/goal_Take_Properties.dds"
@@ -963,7 +963,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Declare_The_Workers_Free_shine"
 		texturefile = "gfx/interface/goals/goal_Declare_The_Workers_Free.dds"
@@ -995,7 +994,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Exile_Industrialists_shine"
 		texturefile = "gfx/interface/goals/goal_Exile_Industrialists.dds"
@@ -1027,7 +1025,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Party_Purge_shine"
 		texturefile = "gfx/interface/goals/goal_Party_Purge.dds"
@@ -1059,7 +1056,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Cult_of_Personality_shine"
 		texturefile = "gfx/interface/goals/goal_Cult_of_Personality.dds"
@@ -1091,7 +1087,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Party_Education_Program_shine"
 		texturefile = "gfx/interface/goals/goal_Party_Education_Program.dds"
@@ -1123,7 +1118,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Consolidate_Power_shine"
 		texturefile = "gfx/interface/goals/goal_Consolidate_Power.dds"
@@ -1155,7 +1149,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Communal_Society_shine"
 		texturefile = "gfx/interface/goals/goal_Communal_Society.dds"
@@ -1187,7 +1180,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Denounce_Stalinist_Communism_shine"
 		texturefile = "gfx/interface/goals/goal_Denounce_Stalinist_Communism.dds"
@@ -1219,7 +1211,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Fellow_Communists_Unite_shine"
 		texturefile = "gfx/interface/goals/goal_Fellow_Communists_Unite.dds"
@@ -1251,7 +1242,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Repression_of_Counter_Revolutionaries_shine"
 		texturefile = "gfx/interface/goals/goal_Repression_of_Counter_Revolutionaries.dds"
@@ -1283,7 +1273,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Stand_Defiant_shine"
 		texturefile = "gfx/interface/goals/goal_Stand_Defiant.dds"
@@ -1315,7 +1304,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Reach_Out_To_The_Democratic_League_shine"
 		texturefile = "gfx/interface/goals/goal_Reach_Out_To_The_Democratic_League.dds"
@@ -1347,7 +1335,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Begin_Legitamizing_Elections_shine"
 		texturefile = "gfx/interface/goals/goal_Begin_Legitamizing_Elections.dds"
@@ -1379,7 +1366,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Renounce_Former_Elections_As_Rigged_shine"
 		texturefile = "gfx/interface/goals/goal_Renounce_Former_Elections_As_Rigged.dds"
@@ -1411,7 +1397,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Perform_First_Election_shine"
 		texturefile = "gfx/interface/goals/goal_Perform_First_Election.dds"
@@ -1443,7 +1428,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Join_The_Democratic_League_shine"
 		texturefile = "gfx/interface/goals/goal_Join_The_Democratic_League.dds"
@@ -1475,7 +1459,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Return_Exiles_shine"
 		texturefile = "gfx/interface/goals/goal_Return_Exiles.dds"
@@ -1507,7 +1490,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Return_Protections_of_Bill_of_Rights_Liberties_shine"
 		texturefile = "gfx/interface/goals/goal_Return_Protections_of_Bill_of_Rights_Liberties.dds"
@@ -1539,7 +1521,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Release_Wrongly_Imprisoned_shine"
 		texturefile = "gfx/interface/goals/goal_Release_Wrongly_Imprisoned.dds"
@@ -1571,7 +1552,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_We_Have_More_Work_To_Do_shine"
 		texturefile = "gfx/interface/goals/goal_We_Have_More_Work_To_Do.dds"
@@ -1603,7 +1583,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_We_Apologize_to_the_American_People_shine"
 		texturefile = "gfx/interface/goals/goal_We_Apologize_to_the_American_People.dds"
@@ -1635,7 +1614,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Diplomatic_Assurances_shine"
 		texturefile = "gfx/interface/goals/goal_Diplomatic_Assurances.dds"
@@ -1667,7 +1645,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Global_Operations_shine"
 		texturefile = "gfx/interface/goals/goal_Global_Operations.dds"
@@ -1699,7 +1676,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Approach_India_shine"
 		texturefile = "gfx/interface/goals/goal_Approach_India.dds"
@@ -1731,7 +1707,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Meet_With_Mexico_shine"
 		texturefile = "gfx/interface/goals/goal_Meet_With_Mexico.dds"
@@ -1763,7 +1738,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Conference_With_Greece_shine"
 		texturefile = "gfx/interface/goals/goal_Conference_With_Greece.dds"
@@ -1795,7 +1769,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Payoff_British_Politicians_shine"
 		texturefile = "gfx/interface/goals/goal_Payoff_British_Politicians.dds"
@@ -1827,7 +1800,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_goal_Democratic_Propaganda_In_Yugoslavia_shine"
 		texturefile = "gfx/interface/goals/goal_Democratic_Propaganda_In_Yugoslavia.dds"
