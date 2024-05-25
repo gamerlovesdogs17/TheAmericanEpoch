@@ -592,3 +592,36 @@ country_event = {
 			}
 	}
 }
+
+country_event = {
+	id = usa.31
+	title = usa.31.t
+	desc = usa.31.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.80.a
+		USA = { country_event = usa.32 }
+		USA = { annex_country = {
+    target = DOM
+    transfer_troops = yes
+} }
+	}
+}
+
+country_event = {
+	id = usa.80
+	title = usa.80.t
+	desc = usa.80.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.80.a
+	}
+}

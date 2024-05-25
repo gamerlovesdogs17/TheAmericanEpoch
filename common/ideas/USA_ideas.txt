@@ -168,7 +168,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_power_gain = 0.05
+				stability_weekly = -0.001
+				political_power_gain = 0.08
+				war_support_weekly_factor = -0.01
 			}
 		}		
 		USA_land_of_the_free_I = {
@@ -306,6 +308,61 @@ ideas = {
 
 			modifier = {
 			neutrality_drift = 0.03
+			political_power_gain = 0.05
+			offence = 0.1
+			}
+		}
+		USA_american_influence_in_government_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			OR = { USA = { has_government = neutrality }
+			NOT = { USA = { has_completed_focus = The_American_Emperor } }
+			} }
+			
+			removal_cost = -1
+
+			modifier = {
+			neutrality_drift = 0.01
+			political_power_gain = -0.03
+			}
+		}
+		USA_secret_police_III = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.001
+				political_power_gain = 0.08
+			}
+		}
+		USA_censorship_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			neutrality_drift = 0.02
+			political_power_gain = -0.03
+			}
+		}
+		USA_world_order_fascism_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			fascism_drift = 0.03
 			political_power_gain = 0.05
 			offence = 0.1
 			}

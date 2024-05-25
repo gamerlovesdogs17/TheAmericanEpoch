@@ -5,6 +5,14 @@ add_ai_strategy = {
     id = "USA"
     value = 1000
 }
+
+add_ai_strategy = {
+    type = alliance
+    id = "USA"
+    value = -1000
+	enable = { NOT = { has_idea = USA_american_influence_in_government_I } }
+}
+add_ideas = USA_american_influence_in_government_I
 if = {
 	limit = {
 		NOT = {
