@@ -233,7 +233,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Take_Properties
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Take_Properties
 		prerequisite = { focus = Arm_Supporters }
 		
 		x = -2
@@ -309,7 +309,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Declare_The_Workers_Free
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Declare_The_Workers_Free
 		prerequisite = { focus = Assign_Loyal_Supporters }
 		prerequisite = { focus = Take_Properties }
 		prerequisite = { focus = Seize_The_Means_of_Production }
@@ -339,7 +339,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Exile_Industrialists
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Exile_Industrialists
 		prerequisite = { focus = Declare_The_Workers_Free }
 		
 		x = 2
@@ -362,7 +362,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Party_Purge
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Party_Purge
 		prerequisite = { focus = Exile_Industrialists }
 		
 		x = 0
@@ -390,7 +390,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Cult_of_Personality
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Cult_of_Personality
 		prerequisite = { focus = Exile_Industrialists }
 		prerequisite = { focus = Repression_of_Counter_Revolutionaries }
 		
@@ -419,7 +419,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Party_Education_Program
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Party_Education_Program
 		prerequisite = { focus = Cult_of_Personality }
 		prerequisite = { focus = Consolidate_Power }
 		prerequisite = { focus = Party_Purge }
@@ -448,7 +448,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Consolidate_Power
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Consolidate_Power
 		prerequisite = { focus = Repression_of_Counter_Revolutionaries }
 		
 		x = 0
@@ -476,7 +476,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Communal_Society
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Communal_Society
 		prerequisite = { focus = Party_Education_Program }
 		
 		x = 0
@@ -499,7 +499,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Denounce_Stalinist_Communism
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Denounce_Stalinist_Communism
 		prerequisite = { focus = Communal_Society }
 		mutually_exclusive = { focus = Fellow_Communists_Unite }
 		
@@ -524,7 +524,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Fellow_Communists_Unite
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Fellow_Communists_Unite
 		prerequisite = { focus = Communal_Society }
 		mutually_exclusive = { focus = Denounce_Stalinist_Communism }
 		
@@ -883,7 +883,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Repression_of_Counter_Revolutionaries
-		icon = GFX_thisgfxiswrong
+		icon = GFX_Repression_of_Counter_Revolutionaries
 		prerequisite = { focus = Declare_The_Workers_Free }
 		
 		x = -2
@@ -1023,7 +1023,7 @@ focus_tree = {
 	
 	focus = {
 		id = Reach_Out_to_the_Democratic_League
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Reach_Out_To_The_Democratic_League
 		prerequisite = { focus = Build_Hideouts }
 		
 		x = 0
@@ -1103,7 +1103,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Begin_Legitamizing_Elections
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Begin_Legitamizing_Elections
 		prerequisite = { focus = Reopen_Congress }
 		prerequisite = { focus = Prepare_New_Ballots }
 		
@@ -1132,7 +1132,7 @@ focus_tree = {
 	
 	focus = {
 		id = Perform_First_Election
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Perform_First_Election
 		prerequisite = { focus = Begin_Legitamizing_Elections }
 		prerequisite = { focus = Renounce_Former_Elections_As_Rigged }
 		x = 0
@@ -1164,7 +1164,7 @@ focus_tree = {
 	
 	focus = {
 		id = Renounce_Former_Elections_As_Rigged
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Renounce_Former_Elections_As_Rigged
 		prerequisite = { focus = Begin_Legitamizing_Elections }
 		
 		x = 2
@@ -1191,7 +1191,7 @@ focus_tree = {
 	
 	focus = {
 		id = Return_Former_Exiles
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Return_Exiles
 		prerequisite = { focus = Perform_First_Election }
 		
 		x = 0
@@ -1216,7 +1216,7 @@ focus_tree = {
 	
 	focus = {
 		id = Return_Protections_of_Bill_of_Rights_Liberties
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Return_Protections_of_Bill_of_Rights_Liberties
 		prerequisite = { focus = Return_Former_Exiles }
 		
 		x = 0
@@ -1240,7 +1240,7 @@ focus_tree = {
 	
 	focus = {
 		id = Release_Wrongly_Imprisoned
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Release_Wrongly_Imprisoned
 		prerequisite = { focus = Return_Former_Exiles }
 		
 		x = 2
@@ -1267,8 +1267,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = We_Got_More_Work_To_Do
-		icon = GFX_thisgfxiswrong
+		id = We_Have_More_Work_To_Do
+		icon = GFX_goal_We_Have_More_Work_To_Do
 		prerequisite = { focus = Return_Protections_of_Bill_of_Rights_Liberties }
 		
 		x = 0
@@ -1292,12 +1292,12 @@ focus_tree = {
 	
 	focus = {
 		id = We_Apologize_to_The_American_People
-		icon = GFX_thisgfxiswrong
-		prerequisite = { focus = We_Got_More_Work_To_Do }
+		icon = GFX_goal_We_Apologize_to_the_American_People
+		prerequisite = { focus = We_Have_More_Work_To_Do }
 		
 		x = 0
 		y = 1
-		relative_position_id = We_Got_More_Work_To_Do
+		relative_position_id = We_Have_More_Work_To_Do
 		
 		cost = 5
 
@@ -1535,7 +1535,7 @@ focus_tree = {
 	}
 		focus = {
 		id = Join_The_Democratic_League
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Join_The_Democratic_League
 		prerequisite = { focus = Perform_First_Election }
 		
 		x = -6
@@ -1558,7 +1558,7 @@ focus_tree = {
 	}
 		focus = {
 		id = Global_Operations
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Global_Operations
 		prerequisite = { focus = Join_The_Democratic_League }
 		
 		x = -3
@@ -1604,7 +1604,7 @@ focus_tree = {
 	}
 		focus = {
 		id = Diplomatic_Assurances
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Diplomatic_Assurances
 		prerequisite = { focus = Join_The_Democratic_League }
 		
 		x = 3
@@ -1630,7 +1630,7 @@ focus_tree = {
 	}
 		focus = {
 		id = Approach_India
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Approach_India
 		prerequisite = { focus = Diplomatic_Assurances }
 		
 		x = -1
@@ -1654,7 +1654,7 @@ focus_tree = {
 	}
 		focus = {
 		id = Meet_With_Mexico
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Meet_With_Mexico
 		prerequisite = { focus = Diplomatic_Assurances }
 		
 		x = 1
@@ -1678,7 +1678,7 @@ focus_tree = {
 	}
 		focus = {
 		id = Conference_With_Greece
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Conference_With_Greece
 		prerequisite = { focus = Meet_With_Mexico }
 		prerequisite = { focus = Approach_India }
 		x = 1
@@ -1726,7 +1726,7 @@ focus_tree = {
 	}
 		focus = {
 		id = Payoff_British_Politicans
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Payoff_British_Politicians
 		prerequisite = { focus = Global_Operations }
 		
 		x = 1
@@ -1796,7 +1796,7 @@ focus_tree = {
 	}
 		focus = {
 		id = Democratic_Propaganda_In_Yugoslavia
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Democratic_Propaganda_In_Yugoslavia
 		prerequisite = { focus = Global_Operations }
 		
 		x = -1
@@ -1925,7 +1925,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stand_Defiant
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_Stand_Defiant
 		prerequisite = { focus = Unite_Protesters focus = Rally_The_Unions }
 		mutually_exclusive = { focus = Halt_Protests }
 		

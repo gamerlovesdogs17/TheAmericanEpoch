@@ -153,8 +153,153 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-	name = "GFX_goal_Monarchical_Education"
-	texturefile = "gfx/interface/goals/goal_Monarchical_Education.dds"
+	name = "GFX_goal_Take_Properties"
+	texturefile = "gfx/interface/goals/goal_Take_Properties.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Declare_The_Workers_Free"
+	texturefile = "gfx/interface/goals/goal_Declare_The_Workers_Free.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Exile_Industrialists"
+	texturefile = "gfx/interface/goals/goal_Exile_Industrialists.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Party_Purge"
+	texturefile = "gfx/interface/goals/goal_Party_Purge.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Cult_of_Personality"
+	texturefile = "gfx/interface/goals/goal_Cult_of_Personality.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Party_Education_Program"
+	texturefile = "gfx/interface/goals/goal_Party_Education_Program.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Consolidate_Power"
+	texturefile = "gfx/interface/goals/goal_Consolidate_Power.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Communal_Society"
+	texturefile = "gfx/interface/goals/goal_Communal_Society.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Denounce_Stalinist_Communism"
+	texturefile = "gfx/interface/goals/goal_Denounce_Stalinist_Communism.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Fellow_Communists_Unite"
+	texturefile = "gfx/interface/goals/goal_Fellow_Communists_Unite.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_Repression_of_Counter_Revolutionaries"
+	texturefile = "gfx/interface/goals/goal_Repression_of_Counter_Revolutionaries.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Stand_Defiant"
+	texturefile = "gfx/interface/goals/goal_Stand_Defiant.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Reach_Out_To_The_Democratic_League"
+	texturefile = "gfx/interface/goals/goal_Reach_Out_To_The_Democratic_League.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Begin_Legitamizing_Elections"
+	texturefile = "gfx/interface/goals/goal_Begin_Legitamizing_Elections.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Renounce_Former_Elections_As_Rigged"
+	texturefile = "gfx/interface/goals/goal_Renounce_Former_Elections_As_Rigged.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Perform_First_Election"
+	texturefile = "gfx/interface/goals/goal_Perform_First_Election.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Join_The_Democratic_League"
+	texturefile = "gfx/interface/goals/goal_Join_The_Democratic_League.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Return_Exiles"
+	texturefile = "gfx/interface/goals/goal_Return_Exiles.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Return_Protections_of_Bill_of_Rights_Liberties"
+	texturefile = "gfx/interface/goals/goal_Return_Protections_of_Bill_of_Rights_Liberties.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Release_Wrongly_Imprisoned"
+	texturefile = "gfx/interface/goals/goal_Release_Wrongly_Imprisoned.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_We_Have_More_Work_To_Do"
+	texturefile = "gfx/interface/goals/goal_We_Have_More_Work_To_Do.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_We_Apologize_to_the_American_People"
+	texturefile = "gfx/interface/goals/goal_We_Apologize_to_the_American_People.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Diplomatic_Assurances"
+	texturefile = "gfx/interface/goals/goal_Diplomatic_Assurances.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Global_Operations"
+	texturefile = "gfx/interface/goals/goal_Global_Operations.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Approach_India"
+	texturefile = "gfx/interface/goals/goal_Approach_India.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Meet_With_Mexico"
+	texturefile = "gfx/interface/goals/goal_Meet_With_Mexico.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Conference_With_Greece"
+	texturefile = "gfx/interface/goals/goal_Conference_With_Greece.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Payoff_British_Politicians"
+	texturefile = "gfx/interface/goals/goal_Payoff_British_Politicians.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Democratic_Propaganda_In_Yugoslavia"
+	texturefile = "gfx/interface/goals/goal_Democratic_Propaganda_In_Yugoslavia.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_Request_Alliance_Ownership"
+	texturefile = "gfx/interface/goals/goal_Democratic_Propaganda_In_Yugoslavia.dds"
 	}
 	
 	SpriteType = {
