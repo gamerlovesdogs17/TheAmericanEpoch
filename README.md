@@ -34,7 +34,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2677872257
 
 ## Mod Team:
 
-Gamerdoglover, Rockythepeep, The Detailed Bread, GoblinAlpen, Andrix01
+Gamerdoglover, Rockythepeep, The Detailed Bread, GoblinAlpen, Andrix01, Bolonhesa
 
 
 
