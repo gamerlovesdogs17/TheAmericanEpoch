@@ -18,7 +18,15 @@ if = {
 		}
 	}
 }
-
+create_country_leader = {
+	name = "Jawaharlal Nehru"
+	desc = ""
+	picture = "gfx/leaders/RAJ/Portrait_RAJ_Jawaharlal_Nehru.dds"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
 set_stability = 0.6
 set_war_support = 0.1
 # Starting tech

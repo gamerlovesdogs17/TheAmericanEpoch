@@ -1,0 +1,803 @@
+﻿	shared_focus = {
+		id = military_effort_mil
+		icon = GFX_goal_generic_military_sphere
+		x = 70
+		y = 0
+		cost = 10
+
+		completion_reward = {
+			army_experience = 10
+			air_experience = 10
+			navy_experience = 10
+		}
+	}
+
+	shared_focus = {
+		id = army_effort_mil
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = military_effort_mil }
+		x = -5
+		y = 1
+		relative_position_id = military_effort_mil
+		cost = 10
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	shared_focus = {
+		id = equipment_effort_mil
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = army_effort_mil }
+		x = -1
+		y = 1
+		relative_position_id = army_effort_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	shared_focus = {
+		id = motorization_effort_mil
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = army_effort_mil }
+		bypass = { has_tech = motorised_infantry }
+		x = 1
+		y = 1
+		relative_position_id = army_effort_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	shared_focus = {
+		id = doctrine_effort_mil
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = army_effort_mil }
+		x = 0
+		y = 2
+		relative_position_id = army_effort_mil
+		cost = 10
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	shared_focus = {
+		id = equipment_effort_2_mil
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = equipment_effort_mil }
+		x = 0
+		y = 2
+		relative_position_id = equipment_effort_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = mechanization_effort_mil
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = motorization_effort_mil }
+		x = 0
+		y = 2
+		relative_position_id = motorization_effort_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	shared_focus = {
+		id = doctrine_effort_2_mil
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = doctrine_effort_mil }
+		x = 0
+		y = 2
+		relative_position_id = doctrine_effort_mil
+		cost = 10
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	shared_focus = {
+		id = equipment_effort_3_mil
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = equipment_effort_2_mil }
+		x = 0
+		y = 2
+		relative_position_id = equipment_effort_2_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	shared_focus = {
+		id = armor_effort_mil
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = mechanization_effort_mil }
+		x = 0
+		y = 2
+		relative_position_id = mechanization_effort_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	shared_focus = {
+		id = aviation_effort_mil
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = military_effort_mil }
+		x = 0
+		y = 1
+		relative_position_id = military_effort_mil
+		cost = 10
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+
+		completion_reward = {
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	shared_focus = {
+		id = fighter_focus_mil
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = aviation_effort_mil }
+		mutually_exclusive = { focus = bomber_focus_mil }
+		x = -1
+		y = 1
+		relative_position_id = aviation_effort_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	shared_focus = {
+		id = bomber_focus_mil
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = aviation_effort_mil }
+		mutually_exclusive = { focus = fighter_focus_mil }
+		x = 1
+		y = 1
+		relative_position_id = aviation_effort_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
+				category = tactical_bomber
+			}
+		}
+	}
+
+	shared_focus = {
+		id = aviation_effort_2_mil
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = bomber_focus_mil focus = fighter_focus_mil }
+		x = -1
+		y = 1
+		relative_position_id = bomber_focus_mil
+		cost = 10
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name =  air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name =  air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	shared_focus = {
+		id = CAS_effort_mil
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = aviation_effort_2_mil }
+		prerequisite = { focus = motorization_effort_mil }
+		x = -1
+		y = 1
+		relative_position_id = aviation_effort_2_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	shared_focus = {
+		id = rocket_effort_mil
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = aviation_effort_2_mil }
+		x = 0
+		y = 2
+		relative_position_id = aviation_effort_2_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	shared_focus = {
+		id = NAV_effort_mil
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = aviation_effort_2_mil }
+		prerequisite = { focus = flexible_navy_mil }
+		x = 1
+		y = 1
+		relative_position_id = aviation_effort_2_mil
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	shared_focus = {
+		id = naval_effort_mil
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = military_effort_mil }
+		x = 5
+		y = 1
+		relative_position_id = military_effort_mil
+		cost = 10
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+
+	shared_focus = {
+		id = flexible_navy_mil
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = naval_effort_mil }
+		mutually_exclusive = { focus = large_navy_mil }
+		x = -1
+		y = 1
+		relative_position_id = naval_effort_mil
+		cost = 10
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = sub_op_bonus
+				cost_reduction = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+
+	shared_focus = {
+		id = large_navy_mil
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = naval_effort_mil }
+		mutually_exclusive = { focus = flexible_navy_mil }
+		x = 1
+		y = 1
+		relative_position_id = naval_effort_mil
+		cost = 10
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	shared_focus = {
+		id = submarine_effort_mil
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = flexible_navy_mil focus = large_navy_mil }
+		x = 0
+		y = 1
+		relative_position_id = flexible_navy_mil
+		cost = 10
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	shared_focus = {
+		id = cruiser_effort_mil
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = large_navy_mil focus = flexible_navy_mil }
+		x = 0
+		y = 1
+		relative_position_id = large_navy_mil
+		cost = 10
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	shared_focus = {
+		id = destroyer_effort_mil
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = submarine_effort_mil }
+		x = 0
+		y = 1
+		relative_position_id = submarine_effort_mil
+		cost = 10
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	shared_focus = {
+		id = capital_ships_effort_mil
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = cruiser_effort_mil }
+		x = 0
+		y = 1
+		relative_position_id = cruiser_effort_mil
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}

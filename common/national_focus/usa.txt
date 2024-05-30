@@ -17,6 +17,8 @@ focus_tree = {
 	
 	shared_focus = Industrial_Development_Plans_ind
 	
+	shared_focus = military_effort_mil
+	
 	focus = {
 		id = America_Strong
 		icon = GFX_goal_America_Strong
