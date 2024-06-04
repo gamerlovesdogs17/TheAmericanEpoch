@@ -1,0 +1,113 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "startgame_gui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 800 height= 650 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_scripted_gui_window_background"
+		}
+
+		buttonType ={
+			name ="close_button"
+			spriteType = "GFX_close_button"
+			position = { x= 320 y = 529 }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Begin The Game"
+			buttonFont = "standard_18"
+		}	
+		
+
+		
+		iconType ={
+			name ="startgame_gui_title_background"
+			spriteType = "GFX_big_txt_background"
+			position = { x= 235 y = 82 }
+			Orientation = "UPPER_LEFT"
+		}	
+
+		instantTextboxType = {
+			name = "startgame_gui_title"
+			position = { x = 300 y = 85 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "startgame_gui_title_txt"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "startgame_gui_thank"
+			position = { x = 230 y = 150 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 350
+			maxHeight = 200
+			text = "startgame_gui_thank_text"
+			fixedsize = yes
+		}
+		
+		iconType ={
+			name ="startgame_gui_information_background"
+			spriteType = "GFX_txt_background"
+			position = { x= 235 y = 251 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextboxType = {
+			name = "startgame_gui_information"
+			position = { x = 317 y = 250 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "startgame_gui_information_txt"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "startgame_gui_inf_updates_ver"
+			position = { x = 346 y = 320 }
+			font = "loadscreen_header"
+			borderSize = {x = 0 y = 0}
+			text = "startgame_gui_inf_updates_ver_txt"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "startgame_gui_inf_updates_ver_txt"
+			position = { x = 259 y = 400 }
+			font = "cg_16b"
+			borderSize = {x = 0 y = 0}
+			text = "startgame_gui_inf_updates_ver_txt_txt"
+			maxWidth = 290
+			maxHeight = 350
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "startgame_gui_inf_updates_ver_txt_upd"
+			position = { x = 312 y = 367 }
+			font = "garamond_14_bold"
+			borderSize = {x = 0 y = 0}
+			text = "startgame_gui_inf_updates_ver_txt_txt_upd"
+			maxWidth = 200
+			maxHeight = 300
+			fixedsize = yes
+		}
+
+	}
+}

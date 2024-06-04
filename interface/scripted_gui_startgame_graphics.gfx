@@ -1,0 +1,23 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_scripted_gui_window_background"
+		textureFile = "/gfx/interface/scripted_gui_graphics/scripted_gui_background.dds"
+	}
+	spriteType = {
+		name = "GFX_close_button"
+		textureFile = "/gfx/interface/button_type_7.dds"
+	}
+	spriteType = {
+		name = "GFX_big_txt_background"
+		textureFile = "/gfx/interface/conference_action_header.dds"
+	}
+	spriteType = {
+		name = "GFX_scrollbar"
+		textureFile = "/gfx/interface/tiled_window_1b_thin_border.dds"
+	}
+	spriteType = {
+		name = "GFX_txt_background"
+		textureFile = "/gfx/interface/scripted_gui_graphics/scripted_gui_txts.dds"
+	}
+}
