@@ -48,20 +48,6 @@ bookmarks = {
 			}
 			
 		}
-		PRC = {
-			history = PRC_1966_BOOKMARK_DESC
-			ideology = communism
-			ideas = {
-				PRC_the_long_march_1
-				PRC_low_popular_support_1
-				PRC_power_struggles
-			}
-			focuses = {
-				PRC_infiltration
-				PRC_maoism
-				PRC_anti_japanese_expedition
-			}
-		}
 		BRA = {
 			history = BRA_1966_BOOKMARK_DESC
 			ideology = neutrality
@@ -99,21 +85,18 @@ bookmarks = {
 				SOV_patriarch_of_all_russia
 			}
 		}
-
-		"---"={
-			history = "OTHER_1966_BOOKMARK_DESC"
-		}
-
-		# minors from DLC ####
-		"ALB"={
-			minor = yes
-			history = "ALB_1966_BOOKMARK_DESC"
-			ideology = neutrality
+		PRC = {
+			history = PRC_1966_BOOKMARK_DESC
+			ideology = communism
 			ideas = {
-
+				PRC_the_long_march_1
+				PRC_low_popular_support_1
+				PRC_power_struggles
 			}
 			focuses = {
-
+				PRC_infiltration
+				PRC_maoism
+				PRC_anti_japanese_expedition
 			}
 		}
 		effect = {
