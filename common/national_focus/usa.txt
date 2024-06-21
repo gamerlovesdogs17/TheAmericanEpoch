@@ -4344,7 +4344,7 @@ GER = { add_popularity = {
 		cost = 10
 
 		available = {
-			
+			NOT = { country_exists = SOV }
 		}
 		
 		completion_reward = {
