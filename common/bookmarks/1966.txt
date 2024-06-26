@@ -24,6 +24,7 @@ bookmarks = {
 			history = USA_1966_BOOKMARK_DESC
 			ideology = neutrality
 			ideas = {
+			USA_secret_police_I
 			}
 			focuses = {
 				For_The_Workers_Revolution

@@ -19,7 +19,7 @@ create_country_leader = {
 	picture = "gfx/leaders/USA/Portrait_USA_Gerald_L_K_Smith.dds"
 	ideology = moderatism
 	traits = {
-		#
+		DEN_rightwing_populist
 	}
 }
 set_politics = {
