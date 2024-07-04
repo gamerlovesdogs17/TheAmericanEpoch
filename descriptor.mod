@@ -6,7 +6,7 @@ tags={
 	"National Focuses"
 }
 name="The American Epoch"
-supported_version="1.14.6"
+supported_version="1.14.7"
 
 replace_path = "events"
 replace_path = "common/national_focus"
