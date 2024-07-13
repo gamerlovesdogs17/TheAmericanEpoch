@@ -1,0 +1,15 @@
+add_namespace = guy_c
+
+news_event = {
+	id = guy_c.1
+	title = guy_c.1.t
+	desc = guy_c.1.d
+	picture = GFX_news_event_hitler_handshake
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = guy_c.1.a
+	}
+}

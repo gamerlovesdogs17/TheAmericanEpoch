@@ -1,0 +1,25 @@
+ENG_missions_cat = {
+	
+		ENG_missions_guyana_indepedance_miss = {
+			activation = {
+				owns_state = 687
+			}
+			available = {
+				 
+			}
+		    cancel_trigger = {
+				always = no
+			} 
+			icon = mission_icon 
+			
+			fire_only_once = yes
+			days_remove = 144
+			days_re_enable = 0
+		
+		
+			remove_effect = {
+				news_event = guy_c.1
+				release = GYA
+			}
+		}
+	}

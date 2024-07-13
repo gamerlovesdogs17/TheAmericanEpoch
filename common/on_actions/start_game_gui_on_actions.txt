@@ -10,3 +10,13 @@ on_actions = {
 		}
 	}
 }
+
+on_actions = {
+	on_startup = {
+		effect = { 
+			ENG = {
+				activate_decision = ENG_missions_guyana_indepedance_miss
+			}
+		}
+	}
+}

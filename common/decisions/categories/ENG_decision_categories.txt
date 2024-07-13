@@ -1,0 +1,14 @@
+################
+##### ENG ######
+################
+
+ENG_missions_cat = {
+	icon = usa_congress
+	visible = {
+		tag = ENG
+	}
+	allowed = {
+		tag = ENG
+	}
+	priority = 85
+}
