@@ -1,0 +1,19 @@
+﻿add_namespace = sov
+
+news_event = {
+	id = sov.1
+	title = sov.1.t
+	desc = sov.1.d
+	picture = GFX_news_event_generic_read_write
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	SOV = { is_ally_with = SLO }
+	}
+	
+	option = { 
+		name = sov.1.a
+	}
+}
