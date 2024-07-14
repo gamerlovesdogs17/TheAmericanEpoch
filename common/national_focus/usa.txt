@@ -242,7 +242,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Arm_Supporters
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			has_war = no
@@ -267,7 +267,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Arm_Supporters
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			has_war = no
@@ -320,7 +320,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = Assign_Loyal_Supporters
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -371,7 +371,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Exile_Industrialists
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -400,7 +400,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Exile_Industrialists
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -430,7 +430,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Cult_of_Personality
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -457,7 +457,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Repression_of_Counter_Revolutionaries
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -558,7 +558,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = Communal_Society
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -627,7 +627,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Formulate_Communist_Alliance
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -802,7 +802,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Join_The_Warsaw_Pact
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -869,7 +869,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Free_European_Peoples
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -892,7 +892,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Declare_The_Workers_Free
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -1113,7 +1113,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Reopen_Congress
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -1173,7 +1173,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Begin_Legitamizing_Elections
 		
-		cost = 10
+		cost = 2
 
 		available = {
 			
@@ -1200,7 +1200,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Perform_First_Election
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -1249,7 +1249,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Return_Former_Exiles
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -1348,7 +1348,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = And_Achieve_The_Steps_To_Repair_Pasts
 		
-		cost = 10
+		cost = 2
 
 		available = {
 			
@@ -1394,7 +1394,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = And_Achieve_The_Steps_To_Repair_Pasts
 		
-		cost = 10
+		cost = 2
 
 		available = {
 
@@ -1521,7 +1521,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Abandon_Big_Brother_Policing_Policy
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -1639,7 +1639,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Diplomatic_Assurances
 		
-		cost = 10
+		cost = 3
 
 		available = {
 			
@@ -1663,7 +1663,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Diplomatic_Assurances
 		
-		cost = 10
+		cost = 3
 
 		available = {
 			
@@ -1687,7 +1687,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Approach_India
 		
-		cost = 10
+		cost = 3
 
 		available = {
 			
@@ -1711,7 +1711,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Conference_With_Greece
 		
-		cost = 10
+		cost = 3
 
 		available = {
 			
@@ -1735,7 +1735,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Global_Operations
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -1805,7 +1805,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Global_Operations
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -1860,7 +1860,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = Demand_For_The_British
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -2300,7 +2300,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Path_of_Royalty
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -2327,7 +2327,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Path_of_Royalty
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -2354,7 +2354,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Ensure_Support_Base
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -2411,7 +2411,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = The_American_Emperor
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -2492,6 +2492,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_command_power = 35
+			ENG = { country_event = usa.82 }
 		}
 		
 		ai_will_do = {
@@ -2556,7 +2557,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Habsburg_America
 		
-		cost = 10
+		cost = 3
 
 		available = {
 			
@@ -2578,7 +2579,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Contact_The_Habsburgs
 		
-		cost = 10
+		cost = 3
 
 		available = {
 			
@@ -2600,7 +2601,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Contact_The_Habsburgs
 		
-		cost = 10
+		cost = 3
 
 		available = {
 			
@@ -2623,7 +2624,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Habsburgs_In_Cabinet
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -2649,6 +2650,10 @@ focus_tree = {
 
 		available = {
 			
+		}
+		
+		bypass = {
+		AUS = { is_puppet = no }
 		}
 		
 		completion_reward = {
@@ -2696,7 +2701,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Allign_With_Habsburg_Ambitions
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -3054,7 +3059,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Secret_Meetings_With_British_Crown
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -3076,7 +3081,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Coordinate_Potential_American_Anglo_Union
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			
@@ -3104,7 +3109,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			always = no
 		}
 		
 		completion_reward = {
@@ -3184,10 +3189,11 @@ focus_tree = {
 		}
 		
 		bypass = {
-		NOT = { country_exists = ENG }
-		NOT = { ENG = { has_subject = AST }
+		
+		OR = { NOT = { ENG = { has_subject = AST }
 			ENG = { has_subject = NZL }
-			ENG = { has_subject = MAL } }
+			ENG = { has_subject = MAL } } 
+			NOT = { country_exists = ENG } }
 		}
 		
 		completion_reward = {

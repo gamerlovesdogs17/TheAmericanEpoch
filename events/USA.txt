@@ -511,8 +511,8 @@ news_event = {
 	desc = usa.26.d
 	picture = GFX_news_event_romania_poland_visit 
 
-	fire_only_once = yes
 	is_triggered_only = yes
+	major = yes
 	
 	option = { 
 		name = usa.26.a
@@ -525,8 +525,8 @@ news_event = {
 	desc = usa.27.d
 	picture = GFX_news_event_dimitrov_in_georgia 
 
-	fire_only_once = yes
 	is_triggered_only = yes
+	major = yes
 	
 	option = { 
 		name = usa.27.a
@@ -632,10 +632,30 @@ news_event = {
 	desc = usa.81.d
 	picture = GFX_news_event_greek_civil_war
 
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = usa.81.a
+	}
+}
+
+country_event = {
+	id = usa.82
+	title = usa.82.t
+	desc = usa.82.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { 
-		name = usa.81.a
+		name = usa.82.a
+		
+	}
+	
+	option = { 
+		name = usa.82.b
+		USA = { complete_national_focus = English_Speakers_United }
 	}
 }

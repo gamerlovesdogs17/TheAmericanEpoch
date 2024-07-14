@@ -6,8 +6,8 @@ news_event = {
 	desc = sov.1.d
 	picture = GFX_news_event_generic_read_write
 
-	fire_only_once = yes
 	is_triggered_only = yes
+	major = yes
 	
 	trigger = {
 	SOV = { is_ally_with = SLO }
