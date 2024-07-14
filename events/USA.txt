@@ -537,7 +537,7 @@ country_event = {
 	id = usa.28
 	title = usa.28.t
 	desc = usa.28.d
-	picture = GFX_report_event_usa_amelia_earhart_airplane
+	picture = GFX_report_event_FIN_mannerheim_president
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -553,7 +553,7 @@ country_event = {
 	
 	option = { 
 		name = usa.28.b
-		USA = { country_event = usa.30 }
+		USA = { country_event = usa.85 }
 	}
 }
 
@@ -561,7 +561,7 @@ country_event = {
 	id = usa.29
 	title = usa.29.t
 	desc = usa.29.d
-	picture = GFX_report_event_usa_amelia_earhart_airplane
+	picture = GFX_report_event_generic_peaceful_annexation
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -572,20 +572,20 @@ country_event = {
 }
 
 country_event = {
-	id = usa.30
-	title = usa.30.t
-	desc = usa.30.d
-	picture = GFX_report_event_usa_amelia_earhart_airplane
+	id = usa.85
+	title = usa.85.t
+	desc = usa.85.d
+	picture = GFX_report_event_DEN_danish_politics
 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { 
-		name = usa.30.a
+		name = usa.85.a
 	}
 	
 	option = { 
-		name = usa.30.b
+		name = usa.85.b
 		create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ENG
@@ -597,7 +597,7 @@ country_event = {
 	id = usa.31
 	title = usa.31.t
 	desc = usa.31.d
-	picture = GFX_report_event_usa_amelia_earhart_airplane
+	picture = GFX_news_event_bulgarian_ff_troops
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -616,7 +616,7 @@ country_event = {
 	id = usa.80
 	title = usa.80.t
 	desc = usa.80.d
-	picture = GFX_report_event_usa_amelia_earhart_airplane
+	picture = GFX_news_event_bulgarian_ff_troops
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -644,7 +644,7 @@ country_event = {
 	id = usa.82
 	title = usa.82.t
 	desc = usa.82.d
-	picture = GFX_report_event_usa_amelia_earhart_airplane
+	picture = GFX_news_event_bose_meeting
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -657,5 +657,44 @@ country_event = {
 	option = { 
 		name = usa.82.b
 		USA = { complete_national_focus = English_Speakers_United }
+	}
+}
+
+country_event = {
+	id = usa.83
+	title = usa.83.t
+	desc = usa.83.d
+	picture = GFX_report_event_finnish_letter
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.83.a
+		news_event = guy_c.3
+	}
+	
+	option = { 
+		name = usa.83.b
+		news_event = guy_c.2
+	}
+}
+
+country_event = {
+	id = usa.84
+	title = usa.84.t
+	desc = usa.84.d
+	picture = GFX_report_event_canadian_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.84.a
+		GYA = { start_civil_war = {
+    ideology = neutrality
+    size = 0.5
+} } 
+		news_event = 
 	}
 }
