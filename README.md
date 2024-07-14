@@ -36,7 +36,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2677872257
 
 Gamerdoglover, Rockythepeep, The Detailed Bread, Andrix01, Bolonhesa
 
-**Former Mod Team Members:** GoblinAlpen
+> Former Mod Team Members: GoblinAlpen
+
+
 
 **Disclaimer: The TAE (The American Epoch) Team does not endorse any authoritarian or extremist political or ideological views represented in this mod and it's paths provided for countries. This mod is intended as a alt history mod with paths for nations allowing players many different unique experiences.**
 
