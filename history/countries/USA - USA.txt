@@ -10,6 +10,8 @@ add_to_faction = CAN
 add_to_faction = ENG
 add_to_faction = FRA
 add_to_faction = SPR
+add_to_faction = POR
+add_to_faction = ITA
 starting_train_buffer = 5
 add_ideas = USA_secret_police_I
 
