@@ -11,6 +11,27 @@ country_event = {
 	
 	option = { 
 		name = ind.1.a
-		news_event = guy_c.5
+		news_event = { id = guy_c.5 days = 5 }
+	}
+}
+
+country_event = {
+	id = ind.2
+	title = ind.2.t
+	desc = ind.2.d
+	picture = GFX_report_event_SWE_saltsjobaden
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = ind.2.a
+		news_event = { id = guy_c.7 days = 5 }		
+		add_war_support = 0.05
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1500
+			target = GYA
+		}
 	}
 }
