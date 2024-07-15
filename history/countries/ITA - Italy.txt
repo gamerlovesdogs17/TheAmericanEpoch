@@ -1,4 +1,10 @@
 ﻿capital = 2
+add_ideas = USA_american_influence_in_government_I
+add_ai_strategy = {
+    type = alliance
+    id = USA
+    value = 150
+}
 if = {
 	limit = {
 		NOT = {
