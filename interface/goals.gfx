@@ -357,6 +357,11 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/goal_continuous_armor_production.dds"			
 	}	
 	
+	SpriteType = {
+	name = "GFX_goal_invade_european_countries"
+	texturefile = "gfx/interface/goals/goal_invade_european_countries.dds"			
+	}
+
 	#### Generic goal icons
 
 	SpriteType = {

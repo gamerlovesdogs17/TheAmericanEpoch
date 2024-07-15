@@ -3797,7 +3797,7 @@ create_wargoal = {
 	}
 		focus = {
 		id = March_On_European_Countries
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_invade_european_countries
 		prerequisite = { focus = Containment_Approach }
 		x = -1
 		y = 1
