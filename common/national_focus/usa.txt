@@ -2041,6 +2041,7 @@ focus_tree = {
 		available = {
 			has_government = neutrality
 			is_ally_with = ENG
+			NOT = { has_completed_focus = Path_of_Royalty has_completed_focus = Constitutional_Modifications_quote_and_quote_For_The_People }
 		}
 		
 		completion_reward = {
