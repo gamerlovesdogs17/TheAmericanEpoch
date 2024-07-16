@@ -243,6 +243,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
+	
 	option = { 
 		name = usa.12.a
 	}
