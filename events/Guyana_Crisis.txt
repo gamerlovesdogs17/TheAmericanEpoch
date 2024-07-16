@@ -117,7 +117,7 @@ news_event = {
 	
 	option = { 
 		name = guy_c.8.a
-		hidden_effect = { news_event = { id = guy_c.9 days = 5 } }
+		hidden_effect = { news_event = { id = guy_c.9 days = 5 fire_only_once = yes } }
 	}
 }
 
@@ -128,7 +128,6 @@ news_event = {
 	picture = GFX_news_event_civil_war_turkey
 
 	is_triggered_only = yes
-	major = yes
 	
 	option = { 
 		name = guy_c.9.a

@@ -5,13 +5,9 @@ news_event = {
 	title = waev.1.t
 	desc = waev.1.d
 	picture = GFX_news_event_050
-	
-	trigger = {
-	NOT = { country_exists = IPR }
-	}
 
-	is_triggered_only = no
-	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = { 
 		name = waev.1.a
@@ -23,13 +19,9 @@ news_event = {
 	title = waev.2.t
 	desc = waev.2.d
 	picture = GFX_news_event_the_megali_idea_succeeds
-	
-	trigger = {
-	NOT = { country_exists = IRA }
-	}
 
-	is_triggered_only = no
-	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = { 
 		name = waev.2.a
