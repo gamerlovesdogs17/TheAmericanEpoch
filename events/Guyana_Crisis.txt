@@ -120,18 +120,18 @@ news_event = {
 		hidden_effect = { news_event = { id = guy_c.9 days = 5 } }
 	}
 }
-###
-### news_event = {
-###	id = guy_c.9
-###	title = guy_c.9.t
-###	desc = guy_c.9.d
-###	picture = GFX_news_event_usa_japan_at_war
-###
-###	is_triggered_only = yes
-###	major = yes
-###	
-###	option = { 
-###		name = guy_c.9.a
-###		hidden_effect = { GYA = { start_civil_war = { ideology = neutrality size = 0.5 } } }
-###	}
-###}
+
+news_event = {
+	id = guy_c.9
+	title = guy_c.9.t
+	desc = guy_c.9.d
+	picture = GFX_news_event_civil_war_turkey
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = guy_c.9.a
+		hidden_effect = { GYA = { start_civil_war = { ideology = neutrality size = 0.5 } } }
+	}
+}
