@@ -1,0 +1,21 @@
+﻿add_namespace = EventsExc
+
+news_event = {
+	id = EventsExc.1
+	title = EventsExc.1.t
+	desc = EventsExc.1.d
+	picture = GFX_news_event_turkey_joins_the_allies
+
+	trigger = {
+	date > 1966.01.05
+	}
+
+	
+	major = yes
+	
+
+	option = { 
+		name = EventsExc.1.a
+		hidden_effect = { RAJ = { add_to_faction = SYR } }
+	}
+}
