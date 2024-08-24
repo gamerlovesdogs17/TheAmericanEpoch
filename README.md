@@ -39,7 +39,6 @@ Gamerdoglover, Rockythepeep, The Detailed Bread, Bolonhesa, SoyPobre123_321
 > Former Mod Team Members: GoblinAlpen, Andrix01
 
 
-
 **Disclaimer: The TAE (The American Epoch) Team does not endorse any authoritarian or extremist political or ideological views represented in this mod and it's paths provided for countries. This mod is intended as a alt history mod with paths for nations allowing players many different unique experiences.**
 
 
